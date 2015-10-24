@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/stephreaves/Desktop/honeybees/honeybees/Build/Products/Debug-iphonesimulator/Pods_honeybees.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-honeybees-umbrella.h",
+          'external-contents': "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/Target Support Files/Pods-honeybees/Pods-honeybees-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_honeybees-Swift.h",
+          'external-contents': "/Users/stephreaves/Desktop/honeybees/honeybees/Build/Products/Debug-iphonesimulator/Pods_honeybees.framework/Headers/Pods_honeybees-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/stephreaves/Desktop/honeybees/honeybees/Build/Products/Debug-iphonesimulator/Pods_honeybees.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/stephreaves/Desktop/honeybees/honeybees/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-honeybees.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
