@@ -6,52 +6,52 @@ provides-nominal:
 provides-member:
 - ["C9honeybees11AppDelegate", ""]
 provides-dynamic-lookup:
+- "managedObjectContext"
+- "application"
+- "pebbleCentral"
+- "applicationDocumentsDirectory"
+- "applicationDidBecomeActive"
+- "managedObjectModel"
+- "persistentStoreCoordinator"
 - "applicationWillEnterForeground"
 - "applicationDidEnterBackground"
-- "persistentStoreCoordinator"
 - "saveContext"
-- "applicationWillResignActive"
-- "managedObjectModel"
-- "application"
 - "window"
-- "applicationDocumentsDirectory"
-- "managedObjectContext"
 - "applicationWillTerminate"
-- "pebbleCentral"
+- "applicationWillResignActive"
 - "watch"
-- "applicationDidBecomeActive"
 depends-top-level:
-- "StringLiteralType"
-- "NSObject"
-- !private "NSUnderlyingErrorKey"
+- !private "NSLocalizedFailureReasonErrorKey"
 - "AppDelegate"
+- "UIResponder"
+- "UIApplication"
+- !private "BooleanLiteralType"
+- !private "print"
+- !private "!="
+- "NSManagedObjectContext"
 - !private "-"
+- !private "abort"
 - !private "NSSQLiteStoreType"
 - "PBPebbleCentral"
-- !private "NSFileManager"
-- "UIWindow"
-- !private "NSLocalizedDescriptionKey"
-- "AnyObject"
-- !private "abort"
-- "NSPersistentStoreCoordinator"
-- "NSURL"
-- !private "NSLog"
-- "UIApplicationDelegate"
-- "UIApplication"
-- !private "print"
-- "Bool"
-- !private "!="
-- !private "NSUUID"
-- "NSManagedObjectContext"
-- "UIResponder"
-- !private "BooleanLiteralType"
-- !private "String"
-- "NSManagedObjectModel"
-- !private "NSBundle"
-- "PBWatch"
-- "PBPebbleCentralDelegate"
 - !private "NSError"
-- !private "NSLocalizedFailureReasonErrorKey"
+- !private "String"
+- "UIApplicationDelegate"
+- "NSManagedObjectModel"
+- "PBPebbleCentralDelegate"
+- !private "NSLog"
+- !private "NSUnderlyingErrorKey"
+- !private "NSBundle"
+- "NSObject"
+- !private "NSFileManager"
+- "NSURL"
+- "NSPersistentStoreCoordinator"
+- "StringLiteralType"
+- !private "NSUUID"
+- "AnyObject"
+- "PBWatch"
+- "UIWindow"
+- "Bool"
+- !private "NSLocalizedDescriptionKey"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
 - !private ["PSs9AnyObject", "NSBundle"]
@@ -95,7 +95,6 @@ depends-member:
 - !private ["PSs9AnyObject", "delegate"]
 - !private ["PSs9AnyObject", "hasChanges"]
 - ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "lastConnectedWatch"]
 - !private ["PSs9AnyObject", "mainBundle"]
 - ["PSs9AnyObject", "managedObjectContext"]
 - ["PSs9AnyObject", "managedObjectContext.storage"]
@@ -105,6 +104,7 @@ depends-member:
 - ["PSs9AnyObject", "persistentStoreCoordinator"]
 - ["PSs9AnyObject", "persistentStoreCoordinator.storage"]
 - !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "run"]
 - !private ["PSs9AnyObject", "save"]
 - ["PSs9AnyObject", "saveContext"]
 - !private ["PSs9AnyObject", "userInfo"]
@@ -225,7 +225,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "delegate"]
 - !private ["PSs11CVarArgType", "hasChanges"]
 - ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "lastConnectedWatch"]
 - !private ["PSs11CVarArgType", "mainBundle"]
 - ["PSs11CVarArgType", "managedObjectContext"]
 - ["PSs11CVarArgType", "managedObjectContext.storage"]
@@ -235,6 +234,7 @@ depends-member:
 - ["PSs11CVarArgType", "persistentStoreCoordinator"]
 - ["PSs11CVarArgType", "persistentStoreCoordinator.storage"]
 - !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "run"]
 - !private ["PSs11CVarArgType", "save"]
 - ["PSs11CVarArgType", "saveContext"]
 - !private ["PSs11CVarArgType", "userInfo"]
@@ -307,7 +307,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - !private ["PSs23CustomStringConvertible", "hasChanges"]
 - ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "lastConnectedWatch"]
 - !private ["PSs23CustomStringConvertible", "mainBundle"]
 - ["PSs23CustomStringConvertible", "managedObjectContext"]
 - ["PSs23CustomStringConvertible", "managedObjectContext.storage"]
@@ -317,6 +316,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "persistentStoreCoordinator"]
 - ["PSs23CustomStringConvertible", "persistentStoreCoordinator.storage"]
 - !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "run"]
 - !private ["PSs23CustomStringConvertible", "save"]
 - ["PSs23CustomStringConvertible", "saveContext"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
@@ -376,7 +376,6 @@ depends-member:
 - !private ["PSs9Equatable", "delegate"]
 - !private ["PSs9Equatable", "hasChanges"]
 - ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "lastConnectedWatch"]
 - !private ["PSs9Equatable", "mainBundle"]
 - ["PSs9Equatable", "managedObjectContext"]
 - ["PSs9Equatable", "managedObjectContext.storage"]
@@ -386,6 +385,7 @@ depends-member:
 - ["PSs9Equatable", "persistentStoreCoordinator"]
 - ["PSs9Equatable", "persistentStoreCoordinator.storage"]
 - !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "run"]
 - !private ["PSs9Equatable", "save"]
 - ["PSs9Equatable", "saveContext"]
 - !private ["PSs9Equatable", "userInfo"]
@@ -445,7 +445,6 @@ depends-member:
 - !private ["PSs8Hashable", "delegate"]
 - !private ["PSs8Hashable", "hasChanges"]
 - ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "lastConnectedWatch"]
 - !private ["PSs8Hashable", "mainBundle"]
 - ["PSs8Hashable", "managedObjectContext"]
 - ["PSs8Hashable", "managedObjectContext.storage"]
@@ -455,6 +454,7 @@ depends-member:
 - ["PSs8Hashable", "persistentStoreCoordinator"]
 - ["PSs8Hashable", "persistentStoreCoordinator.storage"]
 - !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "run"]
 - !private ["PSs8Hashable", "save"]
 - ["PSs8Hashable", "saveContext"]
 - !private ["PSs8Hashable", "userInfo"]
@@ -576,7 +576,6 @@ depends-member:
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "hasChanges"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "lastConnectedWatch"]
 - !private ["CSo8NSObject", "mainBundle"]
 - ["CSo8NSObject", "managedObjectContext"]
 - ["CSo8NSObject", "managedObjectContext.storage"]
@@ -586,6 +585,7 @@ depends-member:
 - ["CSo8NSObject", "persistentStoreCoordinator"]
 - ["CSo8NSObject", "persistentStoreCoordinator.storage"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "run"]
 - !private ["CSo8NSObject", "save"]
 - ["CSo8NSObject", "saveContext"]
 - !private ["CSo8NSObject", "userInfo"]
@@ -632,7 +632,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "hasChanges"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "lastConnectedWatch"]
 - !private ["PSo16NSObjectProtocol", "mainBundle"]
 - ["PSo16NSObjectProtocol", "managedObjectContext"]
 - ["PSo16NSObjectProtocol", "managedObjectContext.storage"]
@@ -642,6 +641,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "persistentStoreCoordinator"]
 - ["PSo16NSObjectProtocol", "persistentStoreCoordinator.storage"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "run"]
 - !private ["PSo16NSObjectProtocol", "save"]
 - ["PSo16NSObjectProtocol", "saveContext"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
@@ -666,7 +666,7 @@ depends-member:
 - !private ["CSo15PBPebbleCentral", "appUUID"]
 - !private ["CSo15PBPebbleCentral", "defaultCentral"]
 - !private ["CSo15PBPebbleCentral", "delegate"]
-- !private ["CSo15PBPebbleCentral", "lastConnectedWatch"]
+- !private ["CSo15PBPebbleCentral", "run"]
 - !private ["PSo23PBPebbleCentralDelegate", "AnyObject"]
 - !private ["PSo23PBPebbleCentralDelegate", "NSBundle"]
 - !private ["PSo23PBPebbleCentralDelegate", "NSError"]
@@ -1030,4 +1030,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
-interface-hash: "69db7788f0698e37ea09176a31a61eb3"
+interface-hash: "4029cdddaf1652fcbee3f1cdf9409a20"

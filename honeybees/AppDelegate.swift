@@ -26,14 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let pebble = PBPebbleCentral.defaultCentral()
-        pebble.delegate = self
+        let pebbleCentral = PBPebbleCentral.defaultCentral()
+        pebbleCentral.appUUID = NSUUID(UUIDString: "133215f0-cf20-4c05-997b-3c9be5a64e5b")
+        pebbleCentral.delegate = self
+        pebbleCentral.run()
         
-        pebble.appUUID = NSUUID(UUIDString: "7bb88216-4ff7-4a35-bc51-13092ee7b427")
-
-        watch = pebble.lastConnectedWatch()
-
         return true
     }
 
@@ -129,16 +128,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: PBPebbleCentralDelegate {
-    func pebbleCentral(central: PBPebbleCentral, watchDidConnect watch: PBWatch) {
-        if self.watch != watch {
-            self.watch = watch
-        }
-    }
-//    func pebbleCentral(central: PBPebbleCentral!, watchDidConnect watch: PBWatch!, isNew: Bool) {
+//    func pebbleCentral(central: PBPebbleCentral, watchDidConnect watch: PBWatch) {
 //        if self.watch != watch {
 //            self.watch = watch
 //        }
 //    }
+//
+
+    func pebbleCentral(central: PBPebbleCentral, watchDidConnect watch: PBWatch, isNew: Bool) {
+                if self.watch != watch {
+                    self.watch = watch
+                }
+    }
 }
 
 
