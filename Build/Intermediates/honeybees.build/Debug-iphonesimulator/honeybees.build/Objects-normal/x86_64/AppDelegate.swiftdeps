@@ -6,60 +6,58 @@ provides-nominal:
 provides-member:
 - ["C9honeybees11AppDelegate", ""]
 provides-dynamic-lookup:
-- "managedObjectContext"
-- "watch"
-- "applicationDidEnterBackground"
-- "application"
-- "applicationWillResignActive"
-- "window"
-- "applicationWillTerminate"
-- "saveContext"
-- "pebbleCentral"
-- "managedObjectModel"
-- "applicationDidBecomeActive"
 - "applicationDocumentsDirectory"
 - "persistentStoreCoordinator"
+- "managedObjectModel"
+- "applicationDidEnterBackground"
+- "saveContext"
 - "applicationWillEnterForeground"
+- "applicationDidBecomeActive"
+- "watch"
+- "applicationWillTerminate"
+- "application"
+- "managedObjectContext"
+- "pebbleCentral"
+- "applicationWillResignActive"
+- "window"
 depends-top-level:
-- "StringLiteralType"
-- "NSObject"
-- "PBPebbleCentral"
-- !private "String"
-- "AnyObject"
-- !private "NSLocalizedFailureReasonErrorKey"
-- "UIApplication"
-- !private "-"
-- !private "NSFileManager"
-- !private "NSSQLiteStoreType"
-- !private "abort"
-- !private "NSData"
-- !private "NSBundle"
 - "UIResponder"
-- !private "print"
-- !private "UInt8"
-- !private "Array"
-- !private "NSUUID"
-- "UIApplicationDelegate"
-- "NSManagedObjectContext"
-- "Bool"
-- !private "NSLocalizedDescriptionKey"
-- !private "NSLog"
-- !private "NSUnderlyingErrorKey"
+- !private "NSBundle"
+- "NSObject"
 - "PBPebbleCentralDelegate"
-- !private "BooleanLiteralType"
+- !private "NSLog"
+- !private "NSFileManager"
+- "UIWindow"
+- "StringLiteralType"
+- !private "NSLocalizedDescriptionKey"
+- !private "NSUnderlyingErrorKey"
+- !private "NSSQLiteStoreType"
+- "PBWatch"
 - !private "!="
 - "AppDelegate"
+- !private "NSLocalizedFailureReasonErrorKey"
+- !private "print"
+- !private "Array"
+- !private "UInt8"
+- !private "-"
+- "NSManagedObjectContext"
+- !private "NSUUID"
+- !private "String"
+- "Bool"
+- !private "BooleanLiteralType"
+- "UIApplicationDelegate"
+- "UIApplication"
+- "PBPebbleCentral"
+- !private "abort"
+- "AnyObject"
+- "NSManagedObjectModel"
 - "NSURL"
-- "PBWatch"
-- "UIWindow"
 - "NSPersistentStoreCoordinator"
 - !private "NSError"
-- "NSManagedObjectModel"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
 - !private ["PSs9AnyObject", "Array"]
 - !private ["PSs9AnyObject", "NSBundle"]
-- !private ["PSs9AnyObject", "NSData"]
 - !private ["PSs9AnyObject", "NSError"]
 - !private ["PSs9AnyObject", "NSFileManager"]
 - !private ["PSs9AnyObject", "NSLocalizedDescriptionKey"]
@@ -121,7 +119,6 @@ depends-member:
 - !private ["C9honeybees11AppDelegate", "Array"]
 - ["C9honeybees11AppDelegate", "Bool"]
 - !private ["C9honeybees11AppDelegate", "NSBundle"]
-- !private ["C9honeybees11AppDelegate", "NSData"]
 - !private ["C9honeybees11AppDelegate", "NSError"]
 - !private ["C9honeybees11AppDelegate", "NSFileManager"]
 - !private ["C9honeybees11AppDelegate", "NSLocalizedDescriptionKey"]
@@ -198,7 +195,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "NSBundle"]
-- !private ["PSs11CVarArgType", "NSData"]
 - !private ["PSs11CVarArgType", "NSError"]
 - !private ["PSs11CVarArgType", "NSFileManager"]
 - !private ["PSs11CVarArgType", "NSLocalizedDescriptionKey"]
@@ -280,7 +276,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "NSBundle"]
-- !private ["PSs23CustomStringConvertible", "NSData"]
 - !private ["PSs23CustomStringConvertible", "NSError"]
 - !private ["PSs23CustomStringConvertible", "NSFileManager"]
 - !private ["PSs23CustomStringConvertible", "NSLocalizedDescriptionKey"]
@@ -353,7 +348,6 @@ depends-member:
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "MainQueueConcurrencyType"]
 - !private ["PSs9Equatable", "NSBundle"]
-- !private ["PSs9Equatable", "NSData"]
 - !private ["PSs9Equatable", "NSError"]
 - !private ["PSs9Equatable", "NSFileManager"]
 - !private ["PSs9Equatable", "NSLocalizedDescriptionKey"]
@@ -426,7 +420,6 @@ depends-member:
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "MainQueueConcurrencyType"]
 - !private ["PSs8Hashable", "NSBundle"]
-- !private ["PSs8Hashable", "NSData"]
 - !private ["PSs8Hashable", "NSError"]
 - !private ["PSs8Hashable", "NSFileManager"]
 - !private ["PSs8Hashable", "NSLocalizedDescriptionKey"]
@@ -540,8 +533,6 @@ depends-member:
 - !private ["PSo9NSCopying", "getUUIDBytes"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "userInfo"]
-- !private ["CSo6NSData", "deinit"]
-- !private ["CSo6NSData", "init"]
 - !private ["CSo7NSError", "init"]
 - !private ["CSo7NSError", "userInfo"]
 - !private ["PSo17NSFastEnumeration", "init"]
@@ -563,7 +554,6 @@ depends-member:
 - !private ["CSo8NSObject", "Array"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "NSBundle"]
-- !private ["CSo8NSObject", "NSData"]
 - !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSFileManager"]
 - !private ["CSo8NSObject", "NSLocalizedDescriptionKey"]
@@ -629,7 +619,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "AnyObject"]
 - !private ["PSo16NSObjectProtocol", "Array"]
 - !private ["PSo16NSObjectProtocol", "NSBundle"]
-- !private ["PSo16NSObjectProtocol", "NSData"]
 - !private ["PSo16NSObjectProtocol", "NSError"]
 - !private ["PSo16NSObjectProtocol", "NSFileManager"]
 - !private ["PSo16NSObjectProtocol", "NSLocalizedDescriptionKey"]
@@ -710,7 +699,6 @@ depends-member:
 - !private ["PSo23PBPebbleCentralDelegate", "AnyObject"]
 - !private ["PSo23PBPebbleCentralDelegate", "Array"]
 - !private ["PSo23PBPebbleCentralDelegate", "NSBundle"]
-- !private ["PSo23PBPebbleCentralDelegate", "NSData"]
 - !private ["PSo23PBPebbleCentralDelegate", "NSError"]
 - !private ["PSo23PBPebbleCentralDelegate", "NSFileManager"]
 - !private ["PSo23PBPebbleCentralDelegate", "NSLocalizedDescriptionKey"]
@@ -787,7 +775,6 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "AnyObject"]
 - !private ["PSo21UIApplicationDelegate", "Array"]
 - !private ["PSo21UIApplicationDelegate", "NSBundle"]
-- !private ["PSo21UIApplicationDelegate", "NSData"]
 - !private ["PSo21UIApplicationDelegate", "NSError"]
 - !private ["PSo21UIApplicationDelegate", "NSFileManager"]
 - !private ["PSo21UIApplicationDelegate", "NSLocalizedDescriptionKey"]
@@ -828,7 +815,6 @@ depends-member:
 - !private ["CSo11UIResponder", "Array"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "NSBundle"]
-- !private ["CSo11UIResponder", "NSData"]
 - !private ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSFileManager"]
 - !private ["CSo11UIResponder", "NSLocalizedDescriptionKey"]
@@ -981,7 +967,6 @@ depends-nominal:
 - !private "CSo8NSBundle"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
-- !private "CSo6NSData"
 - !private "CSo7NSError"
 - !private "PSo17NSFastEnumeration"
 - !private "CSo13NSFileManager"
