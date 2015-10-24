@@ -13,10 +13,30 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var watch: PBWatch? {
+        didSet {
+            if let watch = watch {
+                watch.appMessagesLaunch({ (_, error) in
+                    if error != nil {
+                        print("App launched!")
+                    }
+                })
+            }
+        }
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        let pebble = PBPebbleCentral.defaultCentral()
+        pebble.delegate = self
+        
+        var uuidBytes = Array<UInt8>(count:16, repeatedValue:0)
+        let uuid = NSUUID(UUIDString: "7bb88216-4ff7-4a35-bc51-13092ee7b427")
+        uuid?.getUUIDBytes(&uuidBytes)
+        pebble.appUUID = NSData(bytes: &uuidBytes, length: uuidBytes.count)
+        
+        watch = pebble.lastConnectedWatch()
         return true
     }
 
@@ -106,6 +126,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
 
+
+}
+
+extension AppDelegate: PBPebbleCentralDelegate {
+    func pebbleCentral(central: PBPebbleCentral!, watchDidConnect watch: PBWatch!, isNew: Bool) {
+        if self.watch != watch {
+            self.watch = watch
+        }
+    }
 }
 

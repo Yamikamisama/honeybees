@@ -87,11 +87,13 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import PebbleKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
+@class PBWatch;
 @class UIApplication;
 @class NSObject;
 @class NSURL;
@@ -102,6 +104,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC9honeybees11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic) UIWindow * __nullable window;
+@property (nonatomic) PBWatch * __nullable watch;
 - (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
 - (void)applicationWillResignActive:(UIApplication * __nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * __nonnull)application;
@@ -114,6 +117,12 @@ SWIFT_CLASS("_TtC9honeybees11AppDelegate")
 @property (nonatomic) NSManagedObjectContext * __nonnull managedObjectContext;
 - (void)saveContext;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PBPebbleCentral;
+
+@interface AppDelegate (SWIFT_EXTENSION(honeybees)) <PBPebbleCentralDelegate>
+- (void)pebbleCentral:(PBPebbleCentral * __null_unspecified)central watchDidConnect:(PBWatch * __null_unspecified)watch isNew:(BOOL)isNew;
 @end
 
 @class NSBundle;
