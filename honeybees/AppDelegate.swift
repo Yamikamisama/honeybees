@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pebble.appUUID = NSUUID(UUIDString: "7bb88216-4ff7-4a35-bc51-13092ee7b427")
 
         watch = pebble.lastConnectedWatch()
+
         return true
     }
 
@@ -128,7 +129,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: PBPebbleCentralDelegate {
-    func pebbleCentral(central: PBPebbleCentral, watchDidDisconnect watch: PBWatch) {
+    func pebbleCentral(central: PBPebbleCentral, watchDidConnect watch: PBWatch) {
         if self.watch != watch {
             self.watch = watch
         }
