@@ -17,7 +17,7 @@ var main = new UI.Card({
 
 main.show();
 
-main.on('click', 'select', function(e) {
+main.on('click', 'select', function (e) {
   var menu = new UI.Menu({
     sections: [{
       items: [{
@@ -27,20 +27,20 @@ main.on('click', 'select', function(e) {
       }, {
         title: 'Buy a new Jacket',
         subtitle: 'Superdry'
-      },{
+      }, {
         title: 'Get A Turkey',
-        subtitle:'Boston Market'
+        subtitle: 'Boston Market'
       }]
     }]
   });
-  menu.on('select', function(e) {
+  menu.on('select', function (e) {
     var card = new UI.Card({
       title: e.item.title,
       subtitle: e.item.subtitle,
       body: 'I want to buy a something and that thing may or may not be this thing',
-      scrollable: true,
+      scrollable: true
     });
-    card.on('click', 'select', function(){
+    card.on('click', 'select', function () {
       var newMenu = new UI.Menu({
         sections: [{
           title: 'Finished Task?',
@@ -62,9 +62,9 @@ main.on('click', 'select', function(e) {
   menu.show();
 });
 
-main.on('click', 'up', function(e) {
+main.on('click', 'up', function (e) {
   var wind = new UI.Window({
-    fullscreen: true,
+    fullscreen: true
   });
   var textfield = new UI.Text({
     position: new Vector2(0, 65),
@@ -77,7 +77,7 @@ main.on('click', 'up', function(e) {
   wind.show();
 });
 
-main.on('click', 'down', function(e) {
+main.on('click', 'down', function (e) {
   var cardLogo = new UI.Card({
     // title: 'Honeybees',
     icon: 'IMAGE_ICON_LARGE',
