@@ -32,11 +32,11 @@ decisionMenuConfig = {
     items: [{
       title: 'Completed',
       icon: 'IMAGE_CHECK',
-      subtitle: 'I love you Rob!'
+      subtitle: 'Done, did it!'
     }, {
-      title: 'Later',
+      title: 'Snooze',
       icon: 'IMAGE_X',
-      subtitle: 'Superdry'
+      subtitle: 'Will get to it later.'
     }]
   }]
 },
@@ -100,7 +100,7 @@ homeCard.on('click', 'select', function (e) {
             taskListMenu.hide();
             noTasksCard.show();
           }
-        } else if (selection === 'Later') {
+        } else if (selection === 'Snooze') {
           var snoozeMenu = new UI.Menu(snoozeMenuConfig);
           snoozeMenu.show();
           snoozeMenu.on('select', function (e) {
@@ -120,6 +120,7 @@ homeCard.on('click', 'select', function (e) {
 function updateTask (id, options) {
   for (var i = 0; i < taskListArray.length; i++) {
     if (taskListArray[i].taskId === id) {
+      if (options.hasOwnProperty('snooze')) taskListArray[i].icon = 'IMAGE_ZZZ';
       taskListArray[i].extras = options;
       return;
     }
