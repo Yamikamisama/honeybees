@@ -78,28 +78,35 @@ homeCard.on('click', 'select', function (e) {
         scrollable: true
       });
     }
+    card.show();
     card.on('click', 'select', function (e) {
-      console.log(JSON.stringify(e));
-      newMenu.show();
-      newMenu.on('select', function (e) {
-        // console.log(JSON.stringify(card));
-        placeHolderList = removeTask(card.state.taskId, placeHolderList);
-        newMenu.hide();
-        card.hide();
-        console.log(JSON.stringify(card));
-        menu.items(0, placeHolderList); // Finds section of index 0 and replaces its items array.
+      decisionMenu.show();
+      decisionMenu.on('select', function (e) {
+        var selection = e.item.title;
+        if (selection === 'Completed') {
+          updateTask(card.state.taskId, { 'completed': true });
+          decisionMenu.hide();
+          card.hide();
+          taskListMenu.items(0, incompleteTasks(placeHolderList)); // Finds section of task menu with index 0 and replaces all items.
+          Settings.option('taskList', JSON.stringify(placeHolderList)); // Persist updated list in localStorage.
 
-        if (!placeHolderList.length) {
-          menu.hide();
-          cardNoTasks.show();
+          if (!incompleteTasks(placeHolderList).length) {
+            taskListMenu.hide();
+            noTasksCard.show();
+          }
+        } else if (selection === 'Later') {
+          snoozeMenu.show();
+          snoozeMenu.on('select', function (e) {
+            var task = card.state.taskId;
+            var duration = e.item.title;
+            if (duration === '1 hour') updateTask(task, { 'snooze': 1 });
+            if (duration === '1 day') updateTask(task, { 'snooze': 24 });
+            taskListMenu.show();
+          });
         }
-        // console.log(JSON.stringify(menu.items(0)));
-        // console.log(JSON.stringify(placeHolderList));
       });
     });
-    card.show();
   });
-  menu.show();
 });
 
 
@@ -141,19 +148,11 @@ homeCard.on('click', 'down', function (e) {
 
 
 
-function refreshTaskList (taskList) {
-  var items = [];
-  for (var i = 0; i < taskList.length; i++) {
-    items.push(taskList[i]);
-  }
-  return items;
-}
-
-function removeTask (id, taskList) {
-  for (var i = 0; i < taskList.length; i++) {
-    if (taskList[i].taskId === id) {
-      taskList.splice(i, 1); // Remove the element from array task list.
+function updateTask (id, extras) {
+  for (var i = 0; i < placeHolderList.length; i++) {
+    if (placeHolderList[i].taskId === id) {
+      placeHolderList[i].extras = extras;
+      return;
     }
   }
-  return taskList;
 }
