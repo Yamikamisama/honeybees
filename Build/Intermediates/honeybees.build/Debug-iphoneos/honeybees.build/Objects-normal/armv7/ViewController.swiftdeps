@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C9honeybees14ViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
 - "UIViewController"
 - "ViewController"
