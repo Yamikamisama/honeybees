@@ -49,17 +49,17 @@ snoozeMenuConfig = {
       title: '1 day'
     }]
   }]
-});
+};
 
 homeCard.show();
 
 homeCard.on('click', 'select', function (e) {
   var taskListMenu;
-  if (!taskListMenu && placeHolderList.length) {
+  if (!taskListMenu && taskListArray.length) {
     taskListMenu = new UI.Menu({
       sections: [{
         title: 'Get yo ship together',
-        items: placeHolderList
+        items: taskListArray
       }]
     });
   } else {
