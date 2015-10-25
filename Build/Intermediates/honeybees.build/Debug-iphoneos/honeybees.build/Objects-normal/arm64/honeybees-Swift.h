@@ -122,7 +122,7 @@ SWIFT_CLASS("_TtC9honeybees11AppDelegate")
 @class PBPebbleCentral;
 
 @interface AppDelegate (SWIFT_EXTENSION(honeybees)) <PBPebbleCentralDelegate>
-- (void)pebbleCentral:(PBPebbleCentral * __null_unspecified)central watchDidConnect:(PBWatch * __null_unspecified)watch isNew:(BOOL)isNew;
+- (void)pebbleCentral:(PBPebbleCentral * __nonnull)central watchDidConnect:(PBWatch * __nonnull)watch isNew:(BOOL)isNew;
 @end
 
 @class NSBundle;

@@ -17,11 +17,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var watch: PBWatch? {
         didSet {
             if let watch = watch {
+                let updateIn: [NSNumber : AnyObject] = [0: NSNumber(uint8: 42), 1: "a string"]
+//                let updateOut: [NSNumber : AnyObject] = [0: NSNumber(uint8: 42), 1: "out string"]
+                
                 watch.appMessagesLaunch({ (_, error) in
                     if error != nil {
                         print("App launched!")
                     }
                 })
+                
+                watch.appMessagesGetIsSupported({ (watch, Bool) -> Void in
+                    NSLog("App messages supported")
+                })
+                
+                
+                watch.appMessagesPushUpdate(updateIn, onSent: { (PBwatch, watch, error) -> Void in
+                    if((error) != nil){
+                        NSLog("message sent!")
+                        NSLog("message: %@", updateIn)
+                    } else {
+                        NSLog("Error sending message: %@", error!)
+                    }
+                })
+                
+//                watch.appMessagesAddReceiveUpdateHandler({ (updateOut) -> Bool in
+//                    NSLog("message out: %@", updateOut)
+//                    return YES;
+//                })
+//                
+
+                
             }
         }
     }
@@ -139,7 +164,8 @@ extension AppDelegate: PBPebbleCentralDelegate {
                 if self.watch != watch {
                     self.watch = watch
                 }
+    
+
     }
+
 }
-
-

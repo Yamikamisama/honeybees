@@ -6,57 +6,54 @@ provides-nominal:
 provides-member:
 - ["C9honeybees11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
+- "managedObjectModel"
 - "persistentStoreCoordinator"
-- "saveContext"
-- "applicationWillEnterForeground"
-- "applicationWillResignActive"
-- "application"
-- "pebbleCentral"
+- "managedObjectContext"
+- "applicationWillTerminate"
 - "applicationDidBecomeActive"
 - "watch"
-- "managedObjectModel"
-- "applicationWillTerminate"
-- "managedObjectContext"
-- "applicationDocumentsDirectory"
+- "pebbleCentral"
 - "window"
+- "saveContext"
+- "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
+- "applicationDocumentsDirectory"
+- "applicationWillResignActive"
+- "application"
 depends-top-level:
-- "UIApplicationDelegate"
+- !private "print"
+- "PBWatch"
+- "PBPebbleCentralDelegate"
+- !private "NSError"
 - "StringLiteralType"
 - "NSObject"
-- !private "NSBundle"
-- !private "abort"
-- !private "String"
-- !private "NSFileManager"
-- "NSManagedObjectContext"
-- "UIApplication"
-- !private "NSSQLiteStoreType"
-- !private "-"
-- !private "NSLog"
 - !private "!="
-- "NSPersistentStoreCoordinator"
-- !private "NSLocalizedDescriptionKey"
-- "AppDelegate"
 - !private "NSUnderlyingErrorKey"
-- "Bool"
-- !private "print"
-- "NSManagedObjectModel"
-- "PBWatch"
+- !private "NSLocalizedDescriptionKey"
+- !private "NSBundle"
+- !private "NSFileManager"
+- "PBPebbleCentral"
+- !private "NSLog"
+- "UIWindow"
 - "NSURL"
 - !private "NSUUID"
-- !private "Array"
-- !private "UInt8"
+- "UIApplicationDelegate"
+- !private "-"
 - !private "BooleanLiteralType"
-- "PBPebbleCentralDelegate"
-- "UIWindow"
-- "UIResponder"
-- "PBPebbleCentral"
-- "AnyObject"
-- !private "NSError"
 - !private "NSLocalizedFailureReasonErrorKey"
+- "UIResponder"
+- "UIApplication"
+- "AnyObject"
+- !private "abort"
+- "NSManagedObjectModel"
+- "NSManagedObjectContext"
+- "NSPersistentStoreCoordinator"
+- !private "String"
+- !private "NSSQLiteStoreType"
+- "Bool"
+- "AppDelegate"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
-- !private ["PSs9AnyObject", "Array"]
 - !private ["PSs9AnyObject", "NSBundle"]
 - !private ["PSs9AnyObject", "NSError"]
 - !private ["PSs9AnyObject", "NSFileManager"]
@@ -96,10 +93,8 @@ depends-member:
 - !private ["PSs9AnyObject", "defaultManager"]
 - !private ["PSs9AnyObject", "deinit"]
 - !private ["PSs9AnyObject", "delegate"]
-- !private ["PSs9AnyObject", "getUUIDBytes"]
 - !private ["PSs9AnyObject", "hasChanges"]
 - ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "lastConnectedWatch"]
 - !private ["PSs9AnyObject", "mainBundle"]
 - ["PSs9AnyObject", "managedObjectContext"]
 - ["PSs9AnyObject", "managedObjectContext.storage"]
@@ -109,6 +104,7 @@ depends-member:
 - ["PSs9AnyObject", "persistentStoreCoordinator"]
 - ["PSs9AnyObject", "persistentStoreCoordinator.storage"]
 - !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "run"]
 - !private ["PSs9AnyObject", "save"]
 - ["PSs9AnyObject", "saveContext"]
 - !private ["PSs9AnyObject", "userInfo"]
@@ -116,7 +112,6 @@ depends-member:
 - ["PSs9AnyObject", "window"]
 - ["PSs9AnyObject", ""]
 - ["C9honeybees11AppDelegate", "AnyObject"]
-- !private ["C9honeybees11AppDelegate", "Array"]
 - ["C9honeybees11AppDelegate", "Bool"]
 - !private ["C9honeybees11AppDelegate", "NSBundle"]
 - !private ["C9honeybees11AppDelegate", "NSError"]
@@ -137,7 +132,6 @@ depends-member:
 - !private ["C9honeybees11AppDelegate", "String"]
 - ["C9honeybees11AppDelegate", "UIApplication"]
 - ["C9honeybees11AppDelegate", "UIWindow"]
-- !private ["C9honeybees11AppDelegate", "UInt8"]
 - !private ["C9honeybees11AppDelegate", "abort"]
 - ["C9honeybees11AppDelegate", "application"]
 - ["C9honeybees11AppDelegate", "applicationDidBecomeActive"]
@@ -171,14 +165,12 @@ depends-member:
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
-- !private ["Sa", "init"]
 - !private ["Sa", "subscript"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
 - !private ["PSs23ArrayLiteralConvertible", "UserDomainMask"]
 - !private ["PSs23ArrayLiteralConvertible", "count"]
-- !private ["PSs23ArrayLiteralConvertible", "init"]
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
@@ -191,7 +183,6 @@ depends-member:
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["PSs11CVarArgType", "AnyObject"]
-- !private ["PSs11CVarArgType", "Array"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "NSBundle"]
@@ -232,10 +223,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "defaultCentral"]
 - !private ["PSs11CVarArgType", "defaultManager"]
 - !private ["PSs11CVarArgType", "delegate"]
-- !private ["PSs11CVarArgType", "getUUIDBytes"]
 - !private ["PSs11CVarArgType", "hasChanges"]
 - ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "lastConnectedWatch"]
 - !private ["PSs11CVarArgType", "mainBundle"]
 - ["PSs11CVarArgType", "managedObjectContext"]
 - ["PSs11CVarArgType", "managedObjectContext.storage"]
@@ -245,6 +234,7 @@ depends-member:
 - ["PSs11CVarArgType", "persistentStoreCoordinator"]
 - ["PSs11CVarArgType", "persistentStoreCoordinator.storage"]
 - !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "run"]
 - !private ["PSs11CVarArgType", "save"]
 - ["PSs11CVarArgType", "saveContext"]
 - !private ["PSs11CVarArgType", "userInfo"]
@@ -270,7 +260,6 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "AnyObject"]
-- !private ["PSs23CustomStringConvertible", "Array"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
@@ -316,10 +305,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "defaultCentral"]
 - !private ["PSs23CustomStringConvertible", "defaultManager"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
-- !private ["PSs23CustomStringConvertible", "getUUIDBytes"]
 - !private ["PSs23CustomStringConvertible", "hasChanges"]
 - ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "lastConnectedWatch"]
 - !private ["PSs23CustomStringConvertible", "mainBundle"]
 - ["PSs23CustomStringConvertible", "managedObjectContext"]
 - ["PSs23CustomStringConvertible", "managedObjectContext.storage"]
@@ -329,6 +316,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "persistentStoreCoordinator"]
 - ["PSs23CustomStringConvertible", "persistentStoreCoordinator.storage"]
 - !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "run"]
 - !private ["PSs23CustomStringConvertible", "save"]
 - ["PSs23CustomStringConvertible", "saveContext"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
@@ -342,7 +330,6 @@ depends-member:
 - !private ["PSs28DictionaryLiteralConvertible", "subscript"]
 - !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "AnyObject"]
-- !private ["PSs9Equatable", "Array"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "DocumentDirectory"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
@@ -387,10 +374,8 @@ depends-member:
 - !private ["PSs9Equatable", "defaultCentral"]
 - !private ["PSs9Equatable", "defaultManager"]
 - !private ["PSs9Equatable", "delegate"]
-- !private ["PSs9Equatable", "getUUIDBytes"]
 - !private ["PSs9Equatable", "hasChanges"]
 - ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "lastConnectedWatch"]
 - !private ["PSs9Equatable", "mainBundle"]
 - ["PSs9Equatable", "managedObjectContext"]
 - ["PSs9Equatable", "managedObjectContext.storage"]
@@ -400,6 +385,7 @@ depends-member:
 - ["PSs9Equatable", "persistentStoreCoordinator"]
 - ["PSs9Equatable", "persistentStoreCoordinator.storage"]
 - !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "run"]
 - !private ["PSs9Equatable", "save"]
 - ["PSs9Equatable", "saveContext"]
 - !private ["PSs9Equatable", "userInfo"]
@@ -414,7 +400,6 @@ depends-member:
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "AnyObject"]
-- !private ["PSs8Hashable", "Array"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "DocumentDirectory"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
@@ -458,10 +443,8 @@ depends-member:
 - !private ["PSs8Hashable", "defaultCentral"]
 - !private ["PSs8Hashable", "defaultManager"]
 - !private ["PSs8Hashable", "delegate"]
-- !private ["PSs8Hashable", "getUUIDBytes"]
 - !private ["PSs8Hashable", "hasChanges"]
 - ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "lastConnectedWatch"]
 - !private ["PSs8Hashable", "mainBundle"]
 - ["PSs8Hashable", "managedObjectContext"]
 - ["PSs8Hashable", "managedObjectContext.storage"]
@@ -471,13 +454,13 @@ depends-member:
 - ["PSs8Hashable", "persistentStoreCoordinator"]
 - ["PSs8Hashable", "persistentStoreCoordinator.storage"]
 - !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "run"]
 - !private ["PSs8Hashable", "save"]
 - ["PSs8Hashable", "saveContext"]
 - !private ["PSs8Hashable", "userInfo"]
 - ["PSs8Hashable", "watch"]
 - ["PSs8Hashable", "window"]
 - ["PSs8Hashable", ""]
-- !private ["SQ", "deinit"]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
 - !private ["PSs9Indexable", "SubSequence"]
@@ -506,31 +489,26 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "Index"]
 - !private ["PSs21MutableCollectionType", "SubSequence"]
 - !private ["PSs21MutableCollectionType", "count"]
-- !private ["PSs21MutableCollectionType", "init"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
 - !private ["PSs16MutableIndexable", "SubSequence"]
 - !private ["PSs16MutableIndexable", "count"]
-- !private ["PSs16MutableIndexable", "init"]
 - !private ["PSs16MutableIndexable", "subscript"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
 - !private ["PSs16MutableSliceable", "count"]
-- !private ["PSs16MutableSliceable", "init"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["CSo8NSBundle", "URLForResource"]
 - !private ["CSo8NSBundle", "mainBundle"]
 - !private ["PSo8NSCoding", "URLByAppendingPathComponent"]
-- !private ["PSo8NSCoding", "getUUIDBytes"]
 - !private ["PSo8NSCoding", "hasChanges"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "persistentStoreCoordinator"]
 - !private ["PSo8NSCoding", "save"]
 - !private ["PSo8NSCoding", "userInfo"]
 - !private ["PSo9NSCopying", "URLByAppendingPathComponent"]
-- !private ["PSo9NSCopying", "getUUIDBytes"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "userInfo"]
 - !private ["CSo7NSError", "init"]
@@ -551,7 +529,6 @@ depends-member:
 - !private ["CSo20NSManagedObjectModel", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
-- !private ["CSo8NSObject", "Array"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "NSBundle"]
 - !private ["CSo8NSObject", "NSError"]
@@ -572,7 +549,6 @@ depends-member:
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIWindow"]
-- !private ["CSo8NSObject", "UInt8"]
 - !private ["CSo8NSObject", "URLByAppendingPathComponent"]
 - !private ["CSo8NSObject", "URLForResource"]
 - !private ["CSo8NSObject", "URLsForDirectory"]
@@ -598,10 +574,8 @@ depends-member:
 - !private ["CSo8NSObject", "defaultManager"]
 - !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
-- !private ["CSo8NSObject", "getUUIDBytes"]
 - !private ["CSo8NSObject", "hasChanges"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "lastConnectedWatch"]
 - !private ["CSo8NSObject", "mainBundle"]
 - ["CSo8NSObject", "managedObjectContext"]
 - ["CSo8NSObject", "managedObjectContext.storage"]
@@ -611,13 +585,13 @@ depends-member:
 - ["CSo8NSObject", "persistentStoreCoordinator"]
 - ["CSo8NSObject", "persistentStoreCoordinator.storage"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "run"]
 - !private ["CSo8NSObject", "save"]
 - ["CSo8NSObject", "saveContext"]
 - !private ["CSo8NSObject", "userInfo"]
 - ["CSo8NSObject", "watch"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "AnyObject"]
-- !private ["PSo16NSObjectProtocol", "Array"]
 - !private ["PSo16NSObjectProtocol", "NSBundle"]
 - !private ["PSo16NSObjectProtocol", "NSError"]
 - !private ["PSo16NSObjectProtocol", "NSFileManager"]
@@ -656,10 +630,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "defaultCentral"]
 - !private ["PSo16NSObjectProtocol", "defaultManager"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
-- !private ["PSo16NSObjectProtocol", "getUUIDBytes"]
 - !private ["PSo16NSObjectProtocol", "hasChanges"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "lastConnectedWatch"]
 - !private ["PSo16NSObjectProtocol", "mainBundle"]
 - ["PSo16NSObjectProtocol", "managedObjectContext"]
 - ["PSo16NSObjectProtocol", "managedObjectContext.storage"]
@@ -669,6 +641,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "persistentStoreCoordinator"]
 - ["PSo16NSObjectProtocol", "persistentStoreCoordinator.storage"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "run"]
 - !private ["PSo16NSObjectProtocol", "save"]
 - ["PSo16NSObjectProtocol", "saveContext"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
@@ -680,12 +653,10 @@ depends-member:
 - !private ["OSC21NSSearchPathDirectory", "DocumentDirectory"]
 - !private ["VSC22NSSearchPathDomainMask", "UserDomainMask"]
 - !private ["PSo14NSSecureCoding", "URLByAppendingPathComponent"]
-- !private ["PSo14NSSecureCoding", "getUUIDBytes"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "userInfo"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo5NSURL", "URLByAppendingPathComponent"]
-- !private ["CSo6NSUUID", "getUUIDBytes"]
 - !private ["CSo6NSUUID", "init"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - !private ["PSs13OptionSetType", "UserDomainMask"]
@@ -695,9 +666,8 @@ depends-member:
 - !private ["CSo15PBPebbleCentral", "appUUID"]
 - !private ["CSo15PBPebbleCentral", "defaultCentral"]
 - !private ["CSo15PBPebbleCentral", "delegate"]
-- !private ["CSo15PBPebbleCentral", "lastConnectedWatch"]
+- !private ["CSo15PBPebbleCentral", "run"]
 - !private ["PSo23PBPebbleCentralDelegate", "AnyObject"]
-- !private ["PSo23PBPebbleCentralDelegate", "Array"]
 - !private ["PSo23PBPebbleCentralDelegate", "NSBundle"]
 - !private ["PSo23PBPebbleCentralDelegate", "NSError"]
 - !private ["PSo23PBPebbleCentralDelegate", "NSFileManager"]
@@ -743,7 +713,6 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "Index"]
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
-- !private ["PSs30RangeReplaceableCollectionType", "init"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "DocumentDirectory"]
 - !private ["PSs16RawRepresentable", "MainQueueConcurrencyType"]
@@ -773,7 +742,6 @@ depends-member:
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSo21UIApplicationDelegate", "AnyObject"]
-- !private ["PSo21UIApplicationDelegate", "Array"]
 - !private ["PSo21UIApplicationDelegate", "NSBundle"]
 - !private ["PSo21UIApplicationDelegate", "NSError"]
 - !private ["PSo21UIApplicationDelegate", "NSFileManager"]
@@ -812,7 +780,6 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
-- !private ["CSo11UIResponder", "Array"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "NSBundle"]
 - !private ["CSo11UIResponder", "NSError"]
@@ -833,7 +800,6 @@ depends-member:
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIWindow"]
-- !private ["CSo11UIResponder", "UInt8"]
 - !private ["CSo11UIResponder", "abort"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
@@ -873,7 +839,6 @@ depends-member:
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "SubSequence"]
 - !private ["PSs10_ArrayType", "count"]
-- !private ["PSs10_ArrayType", "init"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -887,7 +852,6 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
-- !private ["PSs24_DestructorSafeContainer", "init"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
@@ -949,7 +913,6 @@ depends-nominal:
 - !private "PSs16ForwardIndexType"
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
-- !private "SQ"
 - !private "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "Si"
@@ -1067,4 +1030,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "c6e81c0bc28f34b8448d4c186e97253b"
+interface-hash: "4029cdddaf1652fcbee3f1cdf9409a20"

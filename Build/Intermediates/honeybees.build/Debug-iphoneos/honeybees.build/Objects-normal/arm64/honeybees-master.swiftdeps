@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.0 (swiftlang_PONDEROSA-700.1.100.2 clang-700.1.74)"
 options: "75697ca106891d3ee1476dbd5cbf6bc4"
-build_time: [499026664, 574093000]
+build_time: [499047719, 270014000]
 inputs: 
-	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/ViewController.swift": [499010186, 0]
-	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/AppDelegate.swift": [499026048, 0]
+	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/AppDelegate.swift": [499047621, 0]
+	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/ViewController.swift": [499042650, 0]
