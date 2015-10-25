@@ -31,9 +31,9 @@ An iOS and Pebble app to help keep the busy New Yorker on track.
 * Email: stephanie.reaves@gmail.com 
 
 ####Yvonne Santiago
-* GitHub: https://github.com/jbouzi12
-* LinkedIn: https://www.linkedin.com/in/jensenbouzi
-* Email: jensen.bouzi@gmail.com
+* GitHub: https://github.com/ysanti
+* LinkedIn: https://www.linkedin.com/in/yvonnealexandra
+* Email: santiagocharriez@gmail.com
 
 ####Robert Yang
 * GitHub: https://github.com/unknownbreaker
