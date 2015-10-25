@@ -12,6 +12,26 @@ main = new UI.Card({
   icon: 'images/logo28.png',
   subtitle: 'Hello World!',
   body: 'Press any button.'
+}),
+cardNoTasks = new UI.Card({
+  title: 'Honeybees',
+  icon: 'images/logo28.png',
+  subtitle: 'Hello World!',
+  body: 'You\'re good, for now.'
+}),
+newMenu = new UI.Menu({
+  sections: [{
+    title: 'Finished Task?',
+    items: [{
+      title: 'Completed',
+      icon: 'IMAGE_CHECK',
+      subtitle: 'I love you Rob!'
+    }, {
+      title: 'Later',
+      icon: 'IMAGE_X',
+      subtitle: 'Superdry'
+    }]
+  }]
 });
 
 main.show();
