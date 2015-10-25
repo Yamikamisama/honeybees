@@ -6,55 +6,55 @@ provides-nominal:
 provides-member:
 - ["C9honeybees11AppDelegate", ""]
 provides-dynamic-lookup:
-- "persistentStoreCoordinator"
-- "applicationWillResignActive"
+- "pebbleCentral"
 - "applicationWillTerminate"
-- "saveContext"
+- "managedObjectContext"
+- "applicationWillEnterForeground"
+- "applicationDocumentsDirectory"
 - "managedObjectModel"
 - "applicationDidBecomeActive"
-- "applicationDocumentsDirectory"
-- "managedObjectContext"
-- "window"
-- "applicationWillEnterForeground"
-- "pebbleCentral"
-- "application"
-- "applicationDidEnterBackground"
+- "persistentStoreCoordinator"
 - "watch"
+- "saveContext"
+- "applicationDidEnterBackground"
+- "window"
+- "application"
+- "applicationWillResignActive"
 depends-top-level:
-- "StringLiteralType"
-- !private "NSUnderlyingErrorKey"
-- "NSObject"
-- !private "NSNumber"
-- !private "Void"
-- !private "print"
-- "PBPebbleCentral"
-- "NSPersistentStoreCoordinator"
-- !private "!="
-- "UIResponder"
-- "AppDelegate"
-- "UIApplication"
-- !private "String"
-- "UIApplicationDelegate"
-- "NSManagedObjectContext"
-- !private "abort"
-- !private "NSSQLiteStoreType"
-- "Bool"
-- !private "Dictionary"
-- !private "NSFileManager"
-- !private "NSBundle"
-- "NSURL"
-- !private "NSLocalizedFailureReasonErrorKey"
-- "PBPebbleCentralDelegate"
-- "NSManagedObjectModel"
-- "BooleanLiteralType"
 - "AnyObject"
-- "PBWatch"
-- "UIWindow"
-- !private "NSLocalizedDescriptionKey"
+- "NSManagedObjectModel"
+- "UIResponder"
+- "UIApplication"
+- !private "BooleanLiteralType"
+- "UIApplicationDelegate"
+- "PBPebbleCentralDelegate"
+- "PBPebbleCentral"
+- !private "NSLocalizedFailureReasonErrorKey"
 - !private "NSLog"
-- !private "-"
+- "NSPersistentStoreCoordinator"
+- "AppDelegate"
+- !private "abort"
+- !private "NSNumber"
+- "NSManagedObjectContext"
+- !private "Void"
+- !private "NSSQLiteStoreType"
 - !private "NSError"
 - !private "NSUUID"
+- "StringLiteralType"
+- "NSObject"
+- !private "print"
+- !private "NSBundle"
+- !private "String"
+- !private "NSUnderlyingErrorKey"
+- !private "!="
+- !private "NSFileManager"
+- "UIWindow"
+- "PBWatch"
+- !private "-"
+- !private "NSLocalizedDescriptionKey"
+- "Bool"
+- "NSURL"
+- !private "Dictionary"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
 - !private ["PSs9AnyObject", "NSBundle"]
@@ -77,7 +77,6 @@ depends-member:
 - !private ["PSs9AnyObject", "URLsForDirectory"]
 - !private ["PSs9AnyObject", "abort"]
 - !private ["PSs9AnyObject", "addPersistentStoreWithType"]
-- !private ["PSs9AnyObject", "appMessagesAddReceiveUpdateHandler"]
 - !private ["PSs9AnyObject", "appMessagesGetIsSupported"]
 - !private ["PSs9AnyObject", "appMessagesLaunch"]
 - !private ["PSs9AnyObject", "appMessagesPushUpdate"]
@@ -215,7 +214,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "URLsForDirectory"]
 - !private ["PSs11CVarArgType", "abort"]
 - !private ["PSs11CVarArgType", "addPersistentStoreWithType"]
-- !private ["PSs11CVarArgType", "appMessagesAddReceiveUpdateHandler"]
 - !private ["PSs11CVarArgType", "appMessagesGetIsSupported"]
 - !private ["PSs11CVarArgType", "appMessagesLaunch"]
 - !private ["PSs11CVarArgType", "appMessagesPushUpdate"]
@@ -306,7 +304,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "abort"]
 - !private ["PSs23CustomStringConvertible", "addPersistentStoreWithType"]
-- !private ["PSs23CustomStringConvertible", "appMessagesAddReceiveUpdateHandler"]
 - !private ["PSs23CustomStringConvertible", "appMessagesGetIsSupported"]
 - !private ["PSs23CustomStringConvertible", "appMessagesLaunch"]
 - !private ["PSs23CustomStringConvertible", "appMessagesPushUpdate"]
@@ -385,7 +382,6 @@ depends-member:
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "abort"]
 - !private ["PSs9Equatable", "addPersistentStoreWithType"]
-- !private ["PSs9Equatable", "appMessagesAddReceiveUpdateHandler"]
 - !private ["PSs9Equatable", "appMessagesGetIsSupported"]
 - !private ["PSs9Equatable", "appMessagesLaunch"]
 - !private ["PSs9Equatable", "appMessagesPushUpdate"]
@@ -459,7 +455,6 @@ depends-member:
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "abort"]
 - !private ["PSs8Hashable", "addPersistentStoreWithType"]
-- !private ["PSs8Hashable", "appMessagesAddReceiveUpdateHandler"]
 - !private ["PSs8Hashable", "appMessagesGetIsSupported"]
 - !private ["PSs8Hashable", "appMessagesLaunch"]
 - !private ["PSs8Hashable", "appMessagesPushUpdate"]
@@ -600,7 +595,6 @@ depends-member:
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "abort"]
 - !private ["CSo8NSObject", "addPersistentStoreWithType"]
-- !private ["CSo8NSObject", "appMessagesAddReceiveUpdateHandler"]
 - !private ["CSo8NSObject", "appMessagesGetIsSupported"]
 - !private ["CSo8NSObject", "appMessagesLaunch"]
 - !private ["CSo8NSObject", "appMessagesPushUpdate"]
@@ -661,7 +655,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "URLsForDirectory"]
 - !private ["PSo16NSObjectProtocol", "abort"]
 - !private ["PSo16NSObjectProtocol", "addPersistentStoreWithType"]
-- !private ["PSo16NSObjectProtocol", "appMessagesAddReceiveUpdateHandler"]
 - !private ["PSo16NSObjectProtocol", "appMessagesGetIsSupported"]
 - !private ["PSo16NSObjectProtocol", "appMessagesLaunch"]
 - !private ["PSo16NSObjectProtocol", "appMessagesPushUpdate"]
@@ -760,7 +753,6 @@ depends-member:
 - !private ["PSo23PBPebbleCentralDelegate", "watch"]
 - ["PSo23PBPebbleCentralDelegate", "window"]
 - ["PSo23PBPebbleCentralDelegate", ""]
-- !private ["CSo7PBWatch", "appMessagesAddReceiveUpdateHandler"]
 - !private ["CSo7PBWatch", "appMessagesGetIsSupported"]
 - !private ["CSo7PBWatch", "appMessagesLaunch"]
 - !private ["CSo7PBWatch", "appMessagesPushUpdate"]
