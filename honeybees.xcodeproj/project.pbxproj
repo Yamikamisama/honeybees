@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297671790C09FC239A3CE4F8 /* Pods_honeybees.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F22823B52AF31842938D0B /* Pods_honeybees.framework */; };
 		69EE57E41BDBC58900E06E77 /* honeybees-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EE57E31BDBC58900E06E77 /* honeybees-Bridging.m */; };
 		69FA2B421BDB368A00BEC967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA2B411BDB368A00BEC967 /* AppDelegate.swift */; };
 		69FA2B441BDB368A00BEC967 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA2B431BDB368A00BEC967 /* ViewController.swift */; };
@@ -14,7 +15,7 @@
 		69FA2B4A1BDB368A00BEC967 /* honeybees.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69FA2B481BDB368A00BEC967 /* honeybees.xcdatamodeld */; };
 		69FA2B4C1BDB368A00BEC967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FA2B4B1BDB368A00BEC967 /* Assets.xcassets */; };
 		69FA2B4F1BDB368A00BEC967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FA2B4D1BDB368A00BEC967 /* LaunchScreen.storyboard */; };
-		A7DB12F7B0C4B124F1DBD924 /* Pods_honeybees.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90C8ED01166BECEE88BB481 /* Pods_honeybees.framework */; };
+		F46928221BDC654B00346E84 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46928211BDC654B00346E84 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +29,10 @@
 		69FA2B4B1BDB368A00BEC967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69FA2B4E1BDB368A00BEC967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69FA2B501BDB368A00BEC967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B90C8ED01166BECEE88BB481 /* Pods_honeybees.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_honeybees.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E08521A06642AFE757C96591 /* Pods-honeybees.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-honeybees.debug.xcconfig"; path = "Pods/Target Support Files/Pods-honeybees/Pods-honeybees.debug.xcconfig"; sourceTree = "<group>"; };
-		E27C1E150C95CB8752C80234 /* Pods-honeybees.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-honeybees.release.xcconfig"; path = "Pods/Target Support Files/Pods-honeybees/Pods-honeybees.release.xcconfig"; sourceTree = "<group>"; };
+		77BAA349BE6BA0ADB6ED9B8A /* Pods-honeybees.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-honeybees.release.xcconfig"; path = "Pods/Target Support Files/Pods-honeybees/Pods-honeybees.release.xcconfig"; sourceTree = "<group>"; };
+		B9F22823B52AF31842938D0B /* Pods_honeybees.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_honeybees.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F428675159EE75F4CE126C /* Pods-honeybees.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-honeybees.debug.xcconfig"; path = "Pods/Target Support Files/Pods-honeybees/Pods-honeybees.debug.xcconfig"; sourceTree = "<group>"; };
+		F46928211BDC654B00346E84 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,19 +40,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7DB12F7B0C4B124F1DBD924 /* Pods_honeybees.framework in Frameworks */,
+				297671790C09FC239A3CE4F8 /* Pods_honeybees.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A5A4AF1AE99778971A9B566 /* Frameworks */ = {
+		31C4BA0F718E57FE0EACB8CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B90C8ED01166BECEE88BB481 /* Pods_honeybees.framework */,
+				E6F428675159EE75F4CE126C /* Pods-honeybees.debug.xcconfig */,
+				77BAA349BE6BA0ADB6ED9B8A /* Pods-honeybees.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		69FA2B351BDB368A00BEC967 = {
@@ -59,9 +62,9 @@
 				69EE57E31BDBC58900E06E77 /* honeybees-Bridging.m */,
 				69FA2B401BDB368A00BEC967 /* honeybees */,
 				69FA2B3F1BDB368A00BEC967 /* Products */,
-				83F8042FD3425CBF7140C0B7 /* Pods */,
-				1A5A4AF1AE99778971A9B566 /* Frameworks */,
 				69EE57E21BDBC58800E06E77 /* honeybees-Bridging-Header.h */,
+				31C4BA0F718E57FE0EACB8CF /* Pods */,
+				FC83057F964E2367B7800DBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +83,7 @@
 				69FA2B431BDB368A00BEC967 /* ViewController.swift */,
 				69FA2B451BDB368A00BEC967 /* Main.storyboard */,
 				69FA2B4B1BDB368A00BEC967 /* Assets.xcassets */,
+				F46928211BDC654B00346E84 /* ViewController2.swift */,
 				69FA2B4D1BDB368A00BEC967 /* LaunchScreen.storyboard */,
 				69FA2B501BDB368A00BEC967 /* Info.plist */,
 				69FA2B481BDB368A00BEC967 /* honeybees.xcdatamodeld */,
@@ -87,13 +91,12 @@
 			path = honeybees;
 			sourceTree = "<group>";
 		};
-		83F8042FD3425CBF7140C0B7 /* Pods */ = {
+		FC83057F964E2367B7800DBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E08521A06642AFE757C96591 /* Pods-honeybees.debug.xcconfig */,
-				E27C1E150C95CB8752C80234 /* Pods-honeybees.release.xcconfig */,
+				B9F22823B52AF31842938D0B /* Pods_honeybees.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46928221BDC654B00346E84 /* ViewController2.swift in Sources */,
 				69EE57E41BDBC58900E06E77 /* honeybees-Bridging.m in Sources */,
 				69FA2B441BDB368A00BEC967 /* ViewController.swift in Sources */,
 				69FA2B421BDB368A00BEC967 /* AppDelegate.swift in Sources */,
@@ -333,30 +337,34 @@
 		};
 		69FA2B541BDB368A00BEC967 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E08521A06642AFE757C96591 /* Pods-honeybees.debug.xcconfig */;
+			baseConfigurationReference = E6F428675159EE75F4CE126C /* Pods-honeybees.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = honeybees/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephreaves.honeybees;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "honeybees-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		69FA2B551BDB368A00BEC967 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E27C1E150C95CB8752C80234 /* Pods-honeybees.release.xcconfig */;
+			baseConfigurationReference = 77BAA349BE6BA0ADB6ED9B8A /* Pods-honeybees.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = honeybees/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephreaves.honeybees;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "honeybees-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
