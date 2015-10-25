@@ -26,7 +26,7 @@ noTasksCard     = new UI.Card({
   subtitle: 'Hello World!',
   body: 'You\'re good, for now.'
 }),
-decisionMenu    = new UI.Menu({
+decisionMenuConfig = {
   sections: [{
     title: 'Finished Task?',
     items: [{
@@ -39,8 +39,8 @@ decisionMenu    = new UI.Menu({
       subtitle: 'Superdry'
     }]
   }]
-}),
-snoozeMenu      = new UI.Menu({
+},
+snoozeMenuConfig = {
   sections: [{
     title: 'Snooze Duration',
     items: [{
@@ -68,40 +68,46 @@ homeCard.on('click', 'select', function (e) {
 
   taskListMenu.show();
   taskListMenu.on('select', function (e) {
-    var card;
-    if (!card) {
-      card = new UI.Card({
+    var taskCard;
+    if (!taskCard) {
+      taskCard = new UI.Card({
         taskId: e.item.taskId,
         title: e.item.title,
         subtitle: e.item.subtitle,
         body: e.item.body,
+        style: 'small',
         scrollable: true
       });
     }
-    card.show();
-    card.on('click', 'select', function (e) {
+    taskCard.show();
+    taskCard.on('click', 'select', function () {
+      var decisionMenu = new UI.Menu(decisionMenuConfig);
       decisionMenu.show();
       decisionMenu.on('select', function (e) {
-        var selection = e.item.title;
-        if (selection === 'Completed') {
-          updateTask(card.state.taskId, { 'completed': true });
-          decisionMenu.hide();
-          card.hide();
-          taskListMenu.items(0, incompleteTasks(placeHolderList)); // Finds section of task menu with index 0 and replaces all items.
-          Settings.option('taskList', JSON.stringify(placeHolderList)); // Persist updated list in localStorage.
+        var selection = e.item.title,
+        taskId = taskCard.state.taskId;
 
-          if (!incompleteTasks(placeHolderList).length) {
+        if (selection === 'Completed') {
+          updateTask(taskId, { 'completed': true });
+          decisionMenu.hide();
+          taskCard.hide();
+          taskListMenu.items(0, incompleteTasks()); // Finds section of task menu with index 0 and replaces all items.
+          Settings.option('taskList', JSON.stringify(taskListArray)); // Persist updated list in localStorage.
+
+          if (!incompleteTasks().length) {
             taskListMenu.hide();
             noTasksCard.show();
           }
         } else if (selection === 'Later') {
+          var snoozeMenu = new UI.Menu(snoozeMenuConfig);
           snoozeMenu.show();
           snoozeMenu.on('select', function (e) {
-            var task = card.state.taskId;
             var duration = e.item.title;
-            if (duration === '1 hour') updateTask(task, { 'snooze': 1 });
-            if (duration === '1 day') updateTask(task, { 'snooze': 24 });
-            taskListMenu.show();
+            if (duration === '1 hour') updateTask(taskId, { 'snooze': 1 });
+            if (duration === '1 day') updateTask(taskId, { 'snooze': 24 });
+            snoozeMenu.hide();
+            decisionMenu.hide();
+            taskCard.hide();
           });
         }
       });
@@ -109,49 +115,10 @@ homeCard.on('click', 'select', function (e) {
   });
 });
 
-
-
-
-
-
-
-homeCard.on('click', 'up', function (e) {
-  var wind = new UI.Window({
-    fullscreen: true
-  });
-  var textfield = new UI.Text({
-    position: new Vector2(0, 65),
-    size: new Vector2(144, 30),
-    font: 'Gothic 14',
-    text: 'Text Anywhere!',
-    textAlign: 'center'
-  });
-  wind.add(textfield);
-  wind.show();
-});
-
-homeCard.on('click', 'down', function (e) {
-  var cardLogo = new UI.Card({
-    // title: 'Honeybees',
-    icon: 'IMAGE_ICON_LARGE',
-    // subtitle: 'Hello World!',
-    // body: 'Press any button.'
-  });
-  cardLogo.show();
-});
-
-
-
-
-
-
-
-
-
-function updateTask (id, extras) {
-  for (var i = 0; i < placeHolderList.length; i++) {
-    if (placeHolderList[i].taskId === id) {
-      placeHolderList[i].extras = extras;
+function updateTask (id, options) {
+  for (var i = 0; i < taskListArray.length; i++) {
+    if (taskListArray[i].taskId === id) {
+      taskListArray[i].extras = options;
       return;
     }
   }
