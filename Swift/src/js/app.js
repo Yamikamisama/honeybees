@@ -14,11 +14,11 @@ incompleteTasks = function () {
     return !value.extras || !value.extras.hasOwnProperty('completed');
   });
 },
-homeCard        = new UI.Card({
-  title: 'Honeybees',
-  icon: 'images/logo28.png',
-  subtitle: 'Hello World!',
-  body: 'Press any button.'
+homeCard        = new UI.Window({
+  fullscreen: true
+}),
+homeSplash = new UI.Image({
+  image: 'LOGO'
 }),
 noTasksCard     = new UI.Card({
   title: 'Honeybees',
@@ -51,9 +51,11 @@ snoozeMenuConfig = {
   }]
 };
 
+homeCard.add(homeSplash);
 homeCard.show();
 
 homeCard.on('click', 'select', function (e) {
+  homeCard.hide();
   var taskListMenu;
   if (!taskListMenu && taskListArray.length) {
     taskListMenu = new UI.Menu({
