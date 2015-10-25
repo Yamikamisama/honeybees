@@ -4,11 +4,15 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		zANMrbuE7P9Anb5kV9Fbc4kKe0w=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L//y+E+59TofuZe7yOjYKA3UHxk=
+			XE3kB3ywtRb+xwN6x/2RqtxfZN4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,34 +30,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x3X/wn+h8eg4rIpu6zfFGNsC054=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HU0P9Ijtkhf9I19TFlWJJ/ddi1w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MDrKFvFWroTb0+KEbQShBcoBvo4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wz5omvIk52PsWnEaHWvxqYRLctw=
+			HsY1QGQIEKhHX5ysnXEMBHqN/jk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -73,6 +50,10 @@
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
 		V2buaGrDwXfrpBJA/LUts5r6J9o=
+		</data>
+		<key>Frameworks/libswiftCoreLocation.dylib</key>
+		<data>
+		JggOtCFBp9ni/Lcyx6ZZS0ZRMb4=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
@@ -96,7 +77,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sK89K6ytQBRDM979sT1UZfCyaqg=
+		xPLAN66PhuYka44hf/gGcIn3eyM=
+		</data>
+		<key>Main.storyboardc/Info.plist</key>
+		<data>
+		z1N5TySBgWQCJefmj0znXrtvLdo=
+		</data>
+		<key>Main.storyboardc/LYI-dq-R4y-view-YSL-HX-BG1.nib</key>
+		<data>
+		rD8D06hKuhHldgdHaAvKfncPj80=
+		</data>
+		<key>Main.storyboardc/UINavigationController-L8L-Ym-BpE.nib</key>
+		<data>
+		GFAs0RFa0a3IHsUlQVMDG13AIdE=
+		</data>
+		<key>Main.storyboardc/UINavigationController-Zci-E9-QA1.nib</key>
+		<data>
+		6Vi7b0h/4hPHPXZByx4vgyXEDWU=
+		</data>
+		<key>Main.storyboardc/WOc-Kh-RdY-view-KFK-uw-HxV.nib</key>
+		<data>
+		1Heo+1AJo+8GuLeNopez8/6FVyw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -121,11 +122,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		zANMrbuE7P9Anb5kV9Fbc4kKe0w=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L//y+E+59TofuZe7yOjYKA3UHxk=
+			XE3kB3ywtRb+xwN6x/2RqtxfZN4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -143,34 +148,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x3X/wn+h8eg4rIpu6zfFGNsC054=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HU0P9Ijtkhf9I19TFlWJJ/ddi1w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MDrKFvFWroTb0+KEbQShBcoBvo4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wz5omvIk52PsWnEaHWvxqYRLctw=
+			HsY1QGQIEKhHX5ysnXEMBHqN/jk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -191,6 +169,10 @@
 		<data>
 		V2buaGrDwXfrpBJA/LUts5r6J9o=
 		</data>
+		<key>Frameworks/libswiftCoreLocation.dylib</key>
+		<data>
+		JggOtCFBp9ni/Lcyx6ZZS0ZRMb4=
+		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
 		Me16aaiMuX2wwguClcY5GWzGNJA=
@@ -210,6 +192,26 @@
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
 		Yqgfd2gdjfZwMb3U+8yl/X8+sDM=
+		</data>
+		<key>Main.storyboardc/Info.plist</key>
+		<data>
+		z1N5TySBgWQCJefmj0znXrtvLdo=
+		</data>
+		<key>Main.storyboardc/LYI-dq-R4y-view-YSL-HX-BG1.nib</key>
+		<data>
+		rD8D06hKuhHldgdHaAvKfncPj80=
+		</data>
+		<key>Main.storyboardc/UINavigationController-L8L-Ym-BpE.nib</key>
+		<data>
+		GFAs0RFa0a3IHsUlQVMDG13AIdE=
+		</data>
+		<key>Main.storyboardc/UINavigationController-Zci-E9-QA1.nib</key>
+		<data>
+		6Vi7b0h/4hPHPXZByx4vgyXEDWU=
+		</data>
+		<key>Main.storyboardc/WOc-Kh-RdY-view-KFK-uw-HxV.nib</key>
+		<data>
+		1Heo+1AJo+8GuLeNopez8/6FVyw=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>

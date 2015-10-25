@@ -87,23 +87,53 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreLocation;
 @import PebbleKit;
+@import ObjectiveC;
+@import MapKit;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIBarButtonItem;
+@class UITextField;
+@class UISegmentedControl;
+@class MKMapView;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9honeybees30AddGeotificationViewController")
+@interface AddGeotificationViewController : UITableViewController
+@property (nonatomic) IBOutlet UIBarButtonItem * __null_unspecified addButton;
+@property (nonatomic) IBOutlet UIBarButtonItem * __null_unspecified zoomButton;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified eventTypeSegmentedControl;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified radiusTextField;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified noteTextField;
+@property (nonatomic, weak) IBOutlet MKMapView * __null_unspecified mapView;
+- (void)viewDidLoad;
+- (IBAction)textFieldEditingChanged:(UITextField * __nonnull)sender;
+- (IBAction)onCancel:(id __nonnull)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
+@class CLLocationManager;
 @class PBWatch;
 @class UIApplication;
 @class NSObject;
+@class CLRegion;
 @class NSURL;
 @class NSManagedObjectModel;
 @class NSPersistentStoreCoordinator;
 @class NSManagedObjectContext;
 
 SWIFT_CLASS("_TtC9honeybees11AppDelegate")
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <CLLocationManagerDelegate, UIApplicationDelegate>
 @property (nonatomic) UIWindow * __nullable window;
+@property (nonatomic, readonly) CLLocationManager * __nonnull locationManager;
 @property (nonatomic) PBWatch * __nullable watch;
 - (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
 - (void)applicationWillResignActive:(UIApplication * __nonnull)application;
@@ -111,6 +141,10 @@ SWIFT_CLASS("_TtC9honeybees11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * __nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * __nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * __nonnull)application;
+- (void)handleRegionEvent:(CLRegion * __nonnull)region;
+- (void)locationManager:(CLLocationManager * __nonnull)manager didEnterRegion:(CLRegion * __nonnull)region;
+- (void)locationManager:(CLLocationManager * __nonnull)manager didExitRegion:(CLRegion * __nonnull)region;
+- (NSString * __nullable)notefromRegionIdentifier:(NSString * __nonnull)identifier;
 @property (nonatomic) NSURL * __nonnull applicationDocumentsDirectory;
 @property (nonatomic) NSManagedObjectModel * __nonnull managedObjectModel;
 @property (nonatomic) NSPersistentStoreCoordinator * __nonnull persistentStoreCoordinator;
@@ -125,13 +159,51 @@ SWIFT_CLASS("_TtC9honeybees11AppDelegate")
 - (void)pebbleCentral:(PBPebbleCentral * __nonnull)central watchDidConnect:(PBWatch * __nonnull)watch isNew:(BOOL)isNew;
 @end
 
-@class NSBundle;
-@class NSCoder;
 
-SWIFT_CLASS("_TtC9honeybees14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC9honeybees13Geotification")
+@interface Geotification : NSObject <MKAnnotation, NSCoding>
+@property (nonatomic) CLLocationCoordinate2D coordinate;
+@property (nonatomic) CLLocationDistance radius;
+@property (nonatomic, copy) NSString * __nonnull identifier;
+@property (nonatomic, copy) NSString * __nonnull note;
+@property (nonatomic, readonly, copy) NSString * __nullable title;
+@property (nonatomic, readonly, copy) NSString * __nullable subtitle;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * __nonnull)coder;
+@end
+
+@class UIStoryboardSegue;
+@class MKAnnotationView;
+@protocol MKOverlay;
+@class MKOverlayRenderer;
+@class UIControl;
+@class CLCircularRegion;
+@class NSError;
+
+SWIFT_CLASS("_TtC9honeybees28GeotificationsViewController")
+@interface GeotificationsViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
+@property (nonatomic, weak) IBOutlet MKMapView * __null_unspecified mapView;
+@property (nonatomic, copy) NSArray<Geotification *> * __nonnull geotifications;
+@property (nonatomic, readonly) CLLocationManager * __nonnull locationManager;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
+- (void)loadAllGeotifications;
+- (void)saveAllGeotifications;
+- (void)addGeotification:(Geotification * __nonnull)geotification;
+- (void)removeGeotification:(Geotification * __nonnull)geotification;
+- (void)updateGeotificationsCount;
+- (MKAnnotationView * __null_unspecified)mapView:(MKMapView * __nonnull)mapView viewForAnnotation:(id <MKAnnotation> __nonnull)annotation;
+- (MKOverlayRenderer * __null_unspecified)mapView:(MKMapView * __nonnull)mapView rendererForOverlay:(id <MKOverlay> __nonnull)overlay;
+- (void)mapView:(MKMapView * __nonnull)mapView annotationView:(MKAnnotationView * __nonnull)view calloutAccessoryControlTapped:(UIControl * __nonnull)control;
+- (void)addRadiusOverlayForGeotification:(Geotification * __nonnull)geotification;
+- (void)removeRadiusOverlayForGeotification:(Geotification * __nonnull)geotification;
+- (IBAction)zoomToCurrentLocation:(id __nonnull)sender;
+- (void)locationManager:(CLLocationManager * __nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
+- (CLCircularRegion * __nonnull)regionWithGeotification:(Geotification * __nonnull)geotification;
+- (void)startMonitoringGeotification:(Geotification * __nonnull)geotification;
+- (void)stopMonitoringGeotification:(Geotification * __nonnull)geotification;
+- (void)locationManager:(CLLocationManager * __nonnull)manager monitoringDidFailForRegion:(CLRegion * __nullable)region withError:(NSError * __nonnull)error;
+- (void)locationManager:(CLLocationManager * __nonnull)manager didFailWithError:(NSError * __nonnull)error;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
