@@ -1,6 +1,8 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "AddGeotificationsViewControllerDelegate"
+- "todoItem"
+- "destination"
 - "AddGeotificationViewController"
 provides-nominal:
 - "P9honeybees39AddGeotificationsViewControllerDelegate"
@@ -9,37 +11,44 @@ provides-member:
 - ["P9honeybees39AddGeotificationsViewControllerDelegate", ""]
 - ["C9honeybees30AddGeotificationViewController", ""]
 provides-dynamic-lookup:
-- "onCancel"
+- "radiusTextField"
+- "todoListTable"
+- "addButton"
+- "noteTextField"
 - "eventTypeSegmentedControl"
 - "mapView"
-- "addButton"
+- "onCancel"
 - "viewDidLoad"
-- "radiusTextField"
-- "textFieldEditingChanged"
 - "zoomButton"
-- "noteTextField"
+- "textFieldEditingChanged"
 depends-top-level:
-- "AddGeotificationViewController"
-- !private "zoomToUserLocationInMapView"
-- !private "Array"
-- "UISegmentedControl"
-- "UITableViewController"
-- "MKMapView"
-- "UIBarButtonItem"
-- "AddGeotificationsViewControllerDelegate"
+- "CLLocationCoordinate2D"
 - !private "&&"
-- "UITextField"
-- !private "=="
-- "EventType"
-- "AnyObject"
-- !private "BooleanLiteralType"
-- !private "UIView"
 - "String"
+- "destination"
+- "AnyObject"
+- "Double"
+- "EventType"
+- !private "Array"
+- "UIBarButtonItem"
+- "todoItem"
+- "UITableView"
+- "AddGeotificationsViewControllerDelegate"
+- "UISegmentedControl"
+- !private "!="
+- !private "BooleanLiteralType"
+- "UITextField"
+- !private "zoomToUserLocationInMapView"
+- !private "=="
+- !private "NSUserDefaults"
+- "MKMapView"
+- !private "NSString"
+- !private "StringLiteralType"
+- !private "UIView"
+- "UITableViewController"
 - !private "!"
 - !private "NSUUID"
-- "Double"
-- "CLLocationCoordinate2D"
-- !private "NSString"
+- "AddGeotificationViewController"
 depends-member:
 - ["C9honeybees30AddGeotificationViewController", "AddGeotificationsViewControllerDelegate"]
 - ["C9honeybees30AddGeotificationViewController", "AnyObject"]
@@ -47,13 +56,17 @@ depends-member:
 - ["C9honeybees30AddGeotificationViewController", "MKMapView"]
 - !private ["C9honeybees30AddGeotificationViewController", "NSString"]
 - !private ["C9honeybees30AddGeotificationViewController", "NSUUID"]
+- !private ["C9honeybees30AddGeotificationViewController", "NSUserDefaults"]
+- !private ["C9honeybees30AddGeotificationViewController", "String"]
 - ["C9honeybees30AddGeotificationViewController", "UIBarButtonItem"]
 - ["C9honeybees30AddGeotificationViewController", "UISegmentedControl"]
+- ["C9honeybees30AddGeotificationViewController", "UITableView"]
 - ["C9honeybees30AddGeotificationViewController", "UITextField"]
 - !private ["C9honeybees30AddGeotificationViewController", "UIView"]
 - ["C9honeybees30AddGeotificationViewController", "addButton"]
 - ["C9honeybees30AddGeotificationViewController", "deinit"]
 - ["C9honeybees30AddGeotificationViewController", "delegate"]
+- !private ["C9honeybees30AddGeotificationViewController", "destination"]
 - !private ["C9honeybees30AddGeotificationViewController", "dismissViewControllerAnimated"]
 - ["C9honeybees30AddGeotificationViewController", "eventTypeSegmentedControl"]
 - ["C9honeybees30AddGeotificationViewController", "init"]
@@ -66,6 +79,8 @@ depends-member:
 - ["C9honeybees30AddGeotificationViewController", "radiusTextField"]
 - !private ["C9honeybees30AddGeotificationViewController", "tableView"]
 - ["C9honeybees30AddGeotificationViewController", "textFieldEditingChanged"]
+- !private ["C9honeybees30AddGeotificationViewController", "todoItem"]
+- ["C9honeybees30AddGeotificationViewController", "todoListTable"]
 - ["C9honeybees30AddGeotificationViewController", "viewDidLoad"]
 - ["C9honeybees30AddGeotificationViewController", "zoomButton"]
 - !private ["C9honeybees30AddGeotificationViewController", "zoomToUserLocationInMapView"]
@@ -77,11 +92,14 @@ depends-member:
 - ["P9honeybees39AddGeotificationsViewControllerDelegate", "addGeotificationViewController"]
 - !private ["PSs9AnyObject", "EventType"]
 - !private ["PSs9AnyObject", "NSUUID"]
+- !private ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "UIView"]
 - !private ["PSs9AnyObject", "UUIDString"]
 - ["PSs9AnyObject", "addButton"]
 - !private ["PSs9AnyObject", "centerCoordinate"]
+- !private ["PSs9AnyObject", "deinit"]
 - ["PSs9AnyObject", "delegate"]
+- !private ["PSs9AnyObject", "destination"]
 - !private ["PSs9AnyObject", "dismissViewControllerAnimated"]
 - !private ["PSs9AnyObject", "doubleValue"]
 - !private ["PSs9AnyObject", "enabled"]
@@ -91,32 +109,40 @@ depends-member:
 - ["PSs9AnyObject", "mapView"]
 - !private ["PSs9AnyObject", "navigationItem"]
 - ["PSs9AnyObject", "noteTextField"]
+- !private ["PSs9AnyObject", "objectForKey"]
 - ["PSs9AnyObject", "onAdd"]
 - ["PSs9AnyObject", "onCancel"]
 - ["PSs9AnyObject", "onZoomToCurrentLocation"]
 - ["PSs9AnyObject", "radiusTextField"]
 - !private ["PSs9AnyObject", "rightBarButtonItems"]
 - !private ["PSs9AnyObject", "selectedSegmentIndex"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
 - !private ["PSs9AnyObject", "tableFooterView"]
 - !private ["PSs9AnyObject", "tableView"]
 - !private ["PSs9AnyObject", "text"]
 - ["PSs9AnyObject", "textFieldEditingChanged"]
+- !private ["PSs9AnyObject", "todoItem"]
+- ["PSs9AnyObject", "todoListTable"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "zoomButton"]
 - !private ["PSs9AnyObject", "zoomToUserLocationInMapView"]
 - ["PSs9AnyObject", ""]
 - !private ["Sa", "Element"]
+- ["Sa", "init"]
 - !private ["PSs23ArrayLiteralConvertible", "Element"]
+- ["PSs23ArrayLiteralConvertible", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["PSs11CVarArgType", "EventType"]
 - !private ["PSs11CVarArgType", "NSUUID"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
 - !private ["PSs11CVarArgType", "UIView"]
 - !private ["PSs11CVarArgType", "UUIDString"]
 - ["PSs11CVarArgType", "addButton"]
 - !private ["PSs11CVarArgType", "centerCoordinate"]
 - ["PSs11CVarArgType", "delegate"]
+- !private ["PSs11CVarArgType", "destination"]
 - !private ["PSs11CVarArgType", "dismissViewControllerAnimated"]
 - !private ["PSs11CVarArgType", "doubleValue"]
 - !private ["PSs11CVarArgType", "enabled"]
@@ -126,33 +152,41 @@ depends-member:
 - ["PSs11CVarArgType", "mapView"]
 - !private ["PSs11CVarArgType", "navigationItem"]
 - ["PSs11CVarArgType", "noteTextField"]
+- !private ["PSs11CVarArgType", "objectForKey"]
 - ["PSs11CVarArgType", "onAdd"]
 - ["PSs11CVarArgType", "onCancel"]
 - ["PSs11CVarArgType", "onZoomToCurrentLocation"]
 - ["PSs11CVarArgType", "radiusTextField"]
 - !private ["PSs11CVarArgType", "rightBarButtonItems"]
 - !private ["PSs11CVarArgType", "selectedSegmentIndex"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
 - !private ["PSs11CVarArgType", "tableFooterView"]
 - !private ["PSs11CVarArgType", "tableView"]
 - !private ["PSs11CVarArgType", "text"]
 - ["PSs11CVarArgType", "textFieldEditingChanged"]
+- !private ["PSs11CVarArgType", "todoItem"]
+- ["PSs11CVarArgType", "todoListTable"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "zoomButton"]
 - !private ["PSs11CVarArgType", "zoomToUserLocationInMapView"]
 - ["PSs11CVarArgType", ""]
 - !private ["PSs14CollectionType", "Element"]
+- ["PSs14CollectionType", "init"]
 - !private ["PSs10Comparable", "isEmpty"]
 - !private ["PSs28CustomDebugStringConvertible", "Element"]
+- ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "isEmpty"]
 - !private ["PSs23CustomStringConvertible", "Element"]
 - !private ["PSs23CustomStringConvertible", "EventType"]
 - !private ["PSs23CustomStringConvertible", "NSUUID"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "UIView"]
 - !private ["PSs23CustomStringConvertible", "UUIDString"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["PSs23CustomStringConvertible", "addButton"]
 - !private ["PSs23CustomStringConvertible", "centerCoordinate"]
 - ["PSs23CustomStringConvertible", "delegate"]
+- !private ["PSs23CustomStringConvertible", "destination"]
 - !private ["PSs23CustomStringConvertible", "dismissViewControllerAnimated"]
 - !private ["PSs23CustomStringConvertible", "doubleValue"]
 - !private ["PSs23CustomStringConvertible", "enabled"]
@@ -162,22 +196,27 @@ depends-member:
 - ["PSs23CustomStringConvertible", "mapView"]
 - !private ["PSs23CustomStringConvertible", "navigationItem"]
 - ["PSs23CustomStringConvertible", "noteTextField"]
+- !private ["PSs23CustomStringConvertible", "objectForKey"]
 - ["PSs23CustomStringConvertible", "onAdd"]
 - ["PSs23CustomStringConvertible", "onCancel"]
 - ["PSs23CustomStringConvertible", "onZoomToCurrentLocation"]
 - ["PSs23CustomStringConvertible", "radiusTextField"]
 - !private ["PSs23CustomStringConvertible", "rightBarButtonItems"]
 - !private ["PSs23CustomStringConvertible", "selectedSegmentIndex"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "tableFooterView"]
 - !private ["PSs23CustomStringConvertible", "tableView"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - ["PSs23CustomStringConvertible", "textFieldEditingChanged"]
+- !private ["PSs23CustomStringConvertible", "todoItem"]
+- ["PSs23CustomStringConvertible", "todoListTable"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "zoomButton"]
 - !private ["PSs23CustomStringConvertible", "zoomToUserLocationInMapView"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["PSs9Equatable", "EventType"]
 - !private ["PSs9Equatable", "NSUUID"]
+- !private ["PSs9Equatable", "NSUserDefaults"]
 - !private ["PSs9Equatable", "OnEntry"]
 - !private ["PSs9Equatable", "OnExit"]
 - !private ["PSs9Equatable", "UIView"]
@@ -186,6 +225,7 @@ depends-member:
 - ["PSs9Equatable", "addButton"]
 - !private ["PSs9Equatable", "centerCoordinate"]
 - ["PSs9Equatable", "delegate"]
+- !private ["PSs9Equatable", "destination"]
 - !private ["PSs9Equatable", "dismissViewControllerAnimated"]
 - !private ["PSs9Equatable", "doubleValue"]
 - !private ["PSs9Equatable", "enabled"]
@@ -195,16 +235,20 @@ depends-member:
 - ["PSs9Equatable", "mapView"]
 - !private ["PSs9Equatable", "navigationItem"]
 - ["PSs9Equatable", "noteTextField"]
+- !private ["PSs9Equatable", "objectForKey"]
 - ["PSs9Equatable", "onAdd"]
 - ["PSs9Equatable", "onCancel"]
 - ["PSs9Equatable", "onZoomToCurrentLocation"]
 - ["PSs9Equatable", "radiusTextField"]
 - !private ["PSs9Equatable", "rightBarButtonItems"]
 - !private ["PSs9Equatable", "selectedSegmentIndex"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
 - !private ["PSs9Equatable", "tableFooterView"]
 - !private ["PSs9Equatable", "tableView"]
 - !private ["PSs9Equatable", "text"]
 - ["PSs9Equatable", "textFieldEditingChanged"]
+- !private ["PSs9Equatable", "todoItem"]
+- ["PSs9Equatable", "todoListTable"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "zoomButton"]
 - !private ["PSs9Equatable", "zoomToUserLocationInMapView"]
@@ -215,6 +259,7 @@ depends-member:
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
 - !private ["PSs8Hashable", "EventType"]
 - !private ["PSs8Hashable", "NSUUID"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
 - !private ["PSs8Hashable", "OnEntry"]
 - !private ["PSs8Hashable", "OnExit"]
 - !private ["PSs8Hashable", "UIView"]
@@ -223,6 +268,7 @@ depends-member:
 - ["PSs8Hashable", "addButton"]
 - !private ["PSs8Hashable", "centerCoordinate"]
 - ["PSs8Hashable", "delegate"]
+- !private ["PSs8Hashable", "destination"]
 - !private ["PSs8Hashable", "dismissViewControllerAnimated"]
 - !private ["PSs8Hashable", "doubleValue"]
 - !private ["PSs8Hashable", "enabled"]
@@ -232,34 +278,44 @@ depends-member:
 - ["PSs8Hashable", "mapView"]
 - !private ["PSs8Hashable", "navigationItem"]
 - ["PSs8Hashable", "noteTextField"]
+- !private ["PSs8Hashable", "objectForKey"]
 - ["PSs8Hashable", "onAdd"]
 - ["PSs8Hashable", "onCancel"]
 - ["PSs8Hashable", "onZoomToCurrentLocation"]
 - ["PSs8Hashable", "radiusTextField"]
 - !private ["PSs8Hashable", "rightBarButtonItems"]
 - !private ["PSs8Hashable", "selectedSegmentIndex"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
 - !private ["PSs8Hashable", "tableFooterView"]
 - !private ["PSs8Hashable", "tableView"]
 - !private ["PSs8Hashable", "text"]
 - ["PSs8Hashable", "textFieldEditingChanged"]
+- !private ["PSs8Hashable", "todoItem"]
+- ["PSs8Hashable", "todoListTable"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "zoomButton"]
 - !private ["PSs8Hashable", "zoomToUserLocationInMapView"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
 - !private ["PSs9Indexable", "Element"]
+- ["PSs9Indexable", "init"]
 - !private ["CSo9MKMapView", "centerCoordinate"]
 - !private ["PSs14MirrorPathType", "isEmpty"]
 - !private ["PSs21MutableCollectionType", "Element"]
+- ["PSs21MutableCollectionType", "init"]
 - !private ["PSs16MutableIndexable", "Element"]
+- ["PSs16MutableIndexable", "init"]
 - !private ["PSs16MutableSliceable", "Element"]
+- ["PSs16MutableSliceable", "init"]
 - !private ["PSo8NSCoding", "EventType"]
 - !private ["PSo8NSCoding", "NSUUID"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "UUIDString"]
 - ["PSo8NSCoding", "addButton"]
 - !private ["PSo8NSCoding", "centerCoordinate"]
 - ["PSo8NSCoding", "delegate"]
+- !private ["PSo8NSCoding", "destination"]
 - !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - !private ["PSo8NSCoding", "doubleValue"]
 - !private ["PSo8NSCoding", "enabled"]
@@ -279,6 +335,8 @@ depends-member:
 - !private ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "textFieldEditingChanged"]
+- !private ["PSo8NSCoding", "todoItem"]
+- ["PSo8NSCoding", "todoListTable"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "zoomButton"]
 - !private ["PSo8NSCoding", "zoomToUserLocationInMapView"]
@@ -289,9 +347,11 @@ depends-member:
 - !private ["PSo9NSCopying", "isEmpty"]
 - !private ["PSo26NSExtensionRequestHandling", "EventType"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUUID"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "addButton"]
 - ["PSo26NSExtensionRequestHandling", "delegate"]
+- !private ["PSo26NSExtensionRequestHandling", "destination"]
 - !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
 - ["PSo26NSExtensionRequestHandling", "eventTypeSegmentedControl"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -304,6 +364,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "radiusTextField"]
 - !private ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "textFieldEditingChanged"]
+- !private ["PSo26NSExtensionRequestHandling", "todoItem"]
+- ["PSo26NSExtensionRequestHandling", "todoListTable"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "zoomButton"]
 - !private ["PSo26NSExtensionRequestHandling", "zoomToUserLocationInMapView"]
@@ -316,14 +378,18 @@ depends-member:
 - ["CSo8NSObject", "MKMapView"]
 - !private ["CSo8NSObject", "NSString"]
 - !private ["CSo8NSObject", "NSUUID"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - ["CSo8NSObject", "UISegmentedControl"]
+- ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "UUIDString"]
 - ["CSo8NSObject", "addButton"]
 - !private ["CSo8NSObject", "centerCoordinate"]
 - ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "destination"]
 - !private ["CSo8NSObject", "dismissViewControllerAnimated"]
 - !private ["CSo8NSObject", "doubleValue"]
 - !private ["CSo8NSObject", "enabled"]
@@ -333,26 +399,32 @@ depends-member:
 - ["CSo8NSObject", "mapView"]
 - !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "noteTextField"]
+- !private ["CSo8NSObject", "objectForKey"]
 - ["CSo8NSObject", "onAdd"]
 - ["CSo8NSObject", "onCancel"]
 - ["CSo8NSObject", "onZoomToCurrentLocation"]
 - ["CSo8NSObject", "radiusTextField"]
 - !private ["CSo8NSObject", "rightBarButtonItems"]
 - !private ["CSo8NSObject", "selectedSegmentIndex"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
 - !private ["CSo8NSObject", "tableFooterView"]
 - !private ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textFieldEditingChanged"]
+- !private ["CSo8NSObject", "todoItem"]
+- ["CSo8NSObject", "todoListTable"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "zoomButton"]
 - !private ["CSo8NSObject", "zoomToUserLocationInMapView"]
 - !private ["PSo16NSObjectProtocol", "EventType"]
 - !private ["PSo16NSObjectProtocol", "NSUUID"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "UUIDString"]
 - ["PSo16NSObjectProtocol", "addButton"]
 - !private ["PSo16NSObjectProtocol", "centerCoordinate"]
 - ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "destination"]
 - !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
 - !private ["PSo16NSObjectProtocol", "doubleValue"]
 - !private ["PSo16NSObjectProtocol", "enabled"]
@@ -362,16 +434,20 @@ depends-member:
 - ["PSo16NSObjectProtocol", "mapView"]
 - !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "noteTextField"]
+- !private ["PSo16NSObjectProtocol", "objectForKey"]
 - ["PSo16NSObjectProtocol", "onAdd"]
 - ["PSo16NSObjectProtocol", "onCancel"]
 - ["PSo16NSObjectProtocol", "onZoomToCurrentLocation"]
 - ["PSo16NSObjectProtocol", "radiusTextField"]
 - !private ["PSo16NSObjectProtocol", "rightBarButtonItems"]
 - !private ["PSo16NSObjectProtocol", "selectedSegmentIndex"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "tableFooterView"]
 - !private ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textFieldEditingChanged"]
+- !private ["PSo16NSObjectProtocol", "todoItem"]
+- ["PSo16NSObjectProtocol", "todoListTable"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "zoomButton"]
 - !private ["PSo16NSObjectProtocol", "zoomToUserLocationInMapView"]
@@ -385,12 +461,16 @@ depends-member:
 - !private ["CSo8NSString", "isEmpty"]
 - !private ["CSo6NSUUID", "UUIDString"]
 - !private ["CSo6NSUUID", "init"]
+- !private ["CSo14NSUserDefaults", "objectForKey"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "isEmpty"]
 - !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- ["PSs30RangeReplaceableCollectionType", "init"]
 - !private ["PSs16RawRepresentable", "OnEntry"]
 - !private ["PSs16RawRepresentable", "OnExit"]
 - !private ["PSs12SequenceType", "Element"]
+- ["PSs12SequenceType", "init"]
 - !private ["PSs10Streamable", "isEmpty"]
 - !private ["SS", "isEmpty"]
 - !private ["PSs30StringInterpolationConvertible", "isEmpty"]
@@ -410,10 +490,12 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "EventType"]
 - !private ["PSo21UIAppearanceContainer", "NSUUID"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - ["PSo21UIAppearanceContainer", "addButton"]
 - !private ["PSo21UIAppearanceContainer", "centerCoordinate"]
 - ["PSo21UIAppearanceContainer", "delegate"]
+- !private ["PSo21UIAppearanceContainer", "destination"]
 - !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
 - ["PSo21UIAppearanceContainer", "eventTypeSegmentedControl"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -429,6 +511,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "textFieldEditingChanged"]
+- !private ["PSo21UIAppearanceContainer", "todoItem"]
+- ["PSo21UIAppearanceContainer", "todoListTable"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "zoomButton"]
 - !private ["PSo21UIAppearanceContainer", "zoomToUserLocationInMapView"]
@@ -437,9 +521,11 @@ depends-member:
 - !private ["CSo9UIBarItem", "enabled"]
 - !private ["PSo18UIContentContainer", "EventType"]
 - !private ["PSo18UIContentContainer", "NSUUID"]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "addButton"]
 - ["PSo18UIContentContainer", "delegate"]
+- !private ["PSo18UIContentContainer", "destination"]
 - !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
 - ["PSo18UIContentContainer", "eventTypeSegmentedControl"]
 - ["PSo18UIContentContainer", "init"]
@@ -452,6 +538,8 @@ depends-member:
 - ["PSo18UIContentContainer", "radiusTextField"]
 - !private ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "textFieldEditingChanged"]
+- !private ["PSo18UIContentContainer", "todoItem"]
+- ["PSo18UIContentContainer", "todoListTable"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "zoomButton"]
 - !private ["PSo18UIContentContainer", "zoomToUserLocationInMapView"]
@@ -476,13 +564,17 @@ depends-member:
 - ["CSo11UIResponder", "MKMapView"]
 - !private ["CSo11UIResponder", "NSString"]
 - !private ["CSo11UIResponder", "NSUUID"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
+- !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - ["CSo11UIResponder", "UISegmentedControl"]
+- ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "addButton"]
 - !private ["CSo11UIResponder", "centerCoordinate"]
 - ["CSo11UIResponder", "delegate"]
+- !private ["CSo11UIResponder", "destination"]
 - !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
 - ["CSo11UIResponder", "eventTypeSegmentedControl"]
 - ["CSo11UIResponder", "init"]
@@ -498,15 +590,19 @@ depends-member:
 - !private ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "textFieldEditingChanged"]
+- !private ["CSo11UIResponder", "todoItem"]
+- ["CSo11UIResponder", "todoListTable"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "zoomButton"]
 - !private ["CSo11UIResponder", "zoomToUserLocationInMapView"]
 - !private ["CSo12UIScrollView", "tableFooterView"]
 - !private ["PSo20UIScrollViewDelegate", "EventType"]
 - !private ["PSo20UIScrollViewDelegate", "NSUUID"]
+- !private ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
 - !private ["PSo20UIScrollViewDelegate", "UIView"]
 - ["PSo20UIScrollViewDelegate", "addButton"]
 - ["PSo20UIScrollViewDelegate", "delegate"]
+- !private ["PSo20UIScrollViewDelegate", "destination"]
 - !private ["PSo20UIScrollViewDelegate", "dismissViewControllerAnimated"]
 - ["PSo20UIScrollViewDelegate", "eventTypeSegmentedControl"]
 - ["PSo20UIScrollViewDelegate", "init"]
@@ -519,6 +615,8 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "radiusTextField"]
 - !private ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "textFieldEditingChanged"]
+- !private ["PSo20UIScrollViewDelegate", "todoItem"]
+- ["PSo20UIScrollViewDelegate", "todoListTable"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", "zoomButton"]
 - !private ["PSo20UIScrollViewDelegate", "zoomToUserLocationInMapView"]
@@ -526,9 +624,11 @@ depends-member:
 - !private ["CSo18UISegmentedControl", "selectedSegmentIndex"]
 - !private ["PSo16UIStateRestoring", "EventType"]
 - !private ["PSo16UIStateRestoring", "NSUUID"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "addButton"]
 - ["PSo16UIStateRestoring", "delegate"]
+- !private ["PSo16UIStateRestoring", "destination"]
 - !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
 - ["PSo16UIStateRestoring", "eventTypeSegmentedControl"]
 - ["PSo16UIStateRestoring", "init"]
@@ -541,6 +641,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "radiusTextField"]
 - !private ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "textFieldEditingChanged"]
+- !private ["PSo16UIStateRestoring", "todoItem"]
+- ["PSo16UIStateRestoring", "todoListTable"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "zoomButton"]
 - !private ["PSo16UIStateRestoring", "zoomToUserLocationInMapView"]
@@ -552,12 +654,16 @@ depends-member:
 - ["CSo21UITableViewController", "MKMapView"]
 - !private ["CSo21UITableViewController", "NSString"]
 - !private ["CSo21UITableViewController", "NSUUID"]
+- !private ["CSo21UITableViewController", "NSUserDefaults"]
+- !private ["CSo21UITableViewController", "String"]
 - ["CSo21UITableViewController", "UIBarButtonItem"]
 - ["CSo21UITableViewController", "UISegmentedControl"]
+- ["CSo21UITableViewController", "UITableView"]
 - ["CSo21UITableViewController", "UITextField"]
 - !private ["CSo21UITableViewController", "UIView"]
 - ["CSo21UITableViewController", "addButton"]
 - ["CSo21UITableViewController", "delegate"]
+- !private ["CSo21UITableViewController", "destination"]
 - !private ["CSo21UITableViewController", "dismissViewControllerAnimated"]
 - ["CSo21UITableViewController", "eventTypeSegmentedControl"]
 - ["CSo21UITableViewController", "init"]
@@ -570,15 +676,19 @@ depends-member:
 - ["CSo21UITableViewController", "radiusTextField"]
 - !private ["CSo21UITableViewController", "tableView"]
 - ["CSo21UITableViewController", "textFieldEditingChanged"]
+- !private ["CSo21UITableViewController", "todoItem"]
+- ["CSo21UITableViewController", "todoListTable"]
 - ["CSo21UITableViewController", "viewDidLoad"]
 - ["CSo21UITableViewController", "zoomButton"]
 - !private ["CSo21UITableViewController", "zoomToUserLocationInMapView"]
 - ["CSo21UITableViewController", ""]
 - !private ["PSo21UITableViewDataSource", "EventType"]
 - !private ["PSo21UITableViewDataSource", "NSUUID"]
+- !private ["PSo21UITableViewDataSource", "NSUserDefaults"]
 - !private ["PSo21UITableViewDataSource", "UIView"]
 - ["PSo21UITableViewDataSource", "addButton"]
 - ["PSo21UITableViewDataSource", "delegate"]
+- !private ["PSo21UITableViewDataSource", "destination"]
 - !private ["PSo21UITableViewDataSource", "dismissViewControllerAnimated"]
 - ["PSo21UITableViewDataSource", "eventTypeSegmentedControl"]
 - ["PSo21UITableViewDataSource", "init"]
@@ -591,15 +701,19 @@ depends-member:
 - ["PSo21UITableViewDataSource", "radiusTextField"]
 - !private ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "textFieldEditingChanged"]
+- !private ["PSo21UITableViewDataSource", "todoItem"]
+- ["PSo21UITableViewDataSource", "todoListTable"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
 - ["PSo21UITableViewDataSource", "zoomButton"]
 - !private ["PSo21UITableViewDataSource", "zoomToUserLocationInMapView"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "EventType"]
 - !private ["PSo19UITableViewDelegate", "NSUUID"]
+- !private ["PSo19UITableViewDelegate", "NSUserDefaults"]
 - !private ["PSo19UITableViewDelegate", "UIView"]
 - ["PSo19UITableViewDelegate", "addButton"]
 - ["PSo19UITableViewDelegate", "delegate"]
+- !private ["PSo19UITableViewDelegate", "destination"]
 - !private ["PSo19UITableViewDelegate", "dismissViewControllerAnimated"]
 - ["PSo19UITableViewDelegate", "eventTypeSegmentedControl"]
 - ["PSo19UITableViewDelegate", "init"]
@@ -612,6 +726,8 @@ depends-member:
 - ["PSo19UITableViewDelegate", "radiusTextField"]
 - !private ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "textFieldEditingChanged"]
+- !private ["PSo19UITableViewDelegate", "todoItem"]
+- ["PSo19UITableViewDelegate", "todoListTable"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", "zoomButton"]
 - !private ["PSo19UITableViewDelegate", "zoomToUserLocationInMapView"]
@@ -621,10 +737,12 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "EventType"]
 - !private ["PSo18UITraitEnvironment", "NSUUID"]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - ["PSo18UITraitEnvironment", "addButton"]
 - !private ["PSo18UITraitEnvironment", "centerCoordinate"]
 - ["PSo18UITraitEnvironment", "delegate"]
+- !private ["PSo18UITraitEnvironment", "destination"]
 - !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
 - ["PSo18UITraitEnvironment", "eventTypeSegmentedControl"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -640,6 +758,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "textFieldEditingChanged"]
+- !private ["PSo18UITraitEnvironment", "todoItem"]
+- ["PSo18UITraitEnvironment", "todoListTable"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "zoomButton"]
 - !private ["PSo18UITraitEnvironment", "zoomToUserLocationInMapView"]
@@ -655,12 +775,16 @@ depends-member:
 - ["CSo16UIViewController", "MKMapView"]
 - !private ["CSo16UIViewController", "NSString"]
 - !private ["CSo16UIViewController", "NSUUID"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
+- !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - ["CSo16UIViewController", "UISegmentedControl"]
+- ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "UIView"]
 - ["CSo16UIViewController", "addButton"]
 - ["CSo16UIViewController", "delegate"]
+- !private ["CSo16UIViewController", "destination"]
 - !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
 - ["CSo16UIViewController", "eventTypeSegmentedControl"]
 - ["CSo16UIViewController", "init"]
@@ -673,12 +797,15 @@ depends-member:
 - ["CSo16UIViewController", "radiusTextField"]
 - !private ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "textFieldEditingChanged"]
+- !private ["CSo16UIViewController", "todoItem"]
+- ["CSo16UIViewController", "todoListTable"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "zoomButton"]
 - !private ["CSo16UIViewController", "zoomToUserLocationInMapView"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "doubleValue"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "isEmpty"]
 - !private ["PSs10_ArrayType", "Element"]
+- ["PSs10_ArrayType", "init"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "isEmpty"]
@@ -687,14 +814,16 @@ depends-member:
 - !private ["PSs16_CocoaStringType", "doubleValue"]
 - !private ["PSs16_CocoaStringType", "isEmpty"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
+- ["PSs24_DestructorSafeContainer", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "isEmpty"]
 - !private ["PSs12_Reflectable", "Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "centerCoordinate"]
 - !private ["PSs12_Reflectable", "doubleValue"]
-- !private ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "isEmpty"]
 - !private ["PSs12_Reflectable", "selectedSegmentIndex"]
 - !private ["PSs12_Reflectable", "tableFooterView"]
@@ -703,27 +832,27 @@ depends-nominal:
 - "C9honeybees30AddGeotificationViewController"
 - "P9honeybees39AddGeotificationsViewControllerDelegate"
 - "PSs9AnyObject"
-- !private "Sa"
-- !private "PSs23ArrayLiteralConvertible"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
 - !private "Sb"
 - !private "PSs25BooleanLiteralConvertible"
 - !private "PSs11BooleanType"
 - "PSs11CVarArgType"
-- !private "PSs14CollectionType"
+- "PSs14CollectionType"
 - !private "PSs10Comparable"
-- !private "PSs28CustomDebugStringConvertible"
+- "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
 - !private "O9honeybees9EventType"
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - "PSs8Hashable"
 - !private "SQ"
-- !private "PSs9Indexable"
+- "PSs9Indexable"
 - !private "CSo9MKMapView"
 - !private "PSs14MirrorPathType"
-- !private "PSs21MutableCollectionType"
-- !private "PSs16MutableIndexable"
-- !private "PSs16MutableSliceable"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -733,11 +862,12 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "CSo6NSUUID"
+- !private "CSo14NSUserDefaults"
 - !private "Sq"
 - !private "PSs16OutputStreamType"
-- !private "PSs30RangeReplaceableCollectionType"
+- "PSs30RangeReplaceableCollectionType"
 - !private "PSs16RawRepresentable"
-- !private "PSs12SequenceType"
+- "PSs12SequenceType"
 - !private "PSs10Streamable"
 - !private "SS"
 - !private "PSs30StringInterpolationConvertible"
@@ -769,16 +899,16 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "PSs31UnicodeScalarLiteralConvertible"
-- !private "PSs10_ArrayType"
+- "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
 - !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "PSs32_BuiltinStringLiteralConvertible"
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
-- !private "PSs24_DestructorSafeContainer"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "PSs12_Reflectable"
+- "PSs24_DestructorSafeContainer"
+- "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
@@ -816,4 +946,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
-interface-hash: "190dcb8d50940e54babc7288bdd83eb8"
+interface-hash: "0868cf9edae6aed4db5fc52e38f697de"

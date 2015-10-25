@@ -216,7 +216,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addButton" destination="Zqz-jV-nhQ" id="ghk-If-qAk"/>
                         <outlet property="eventTypeSegmentedControl" destination="qO7-cw-PJc" id="OuO-Zk-T2c"/>
                         <outlet property="mapView" destination="frU-qC-iGG" id="DtX-ni-IE0"/>
                         <outlet property="noteTextField" destination="USr-pF-VnD" id="WbB-ib-wAX"/>
@@ -228,6 +227,7 @@
                 <barButtonItem title="Add" id="Zqz-jV-nhQ">
                     <connections>
                         <action selector="onAdd:" destination="WOc-Kh-RdY" id="n9f-d9-dwK"/>
+                        <segue destination="CfB-LZ-rg0" kind="show" id="y0L-NI-Lbb"/>
                     </connections>
                 </barButtonItem>
                 <barButtonItem image="CurrentLocation" id="cLD-qt-jBr" userLabel="CurrentLocation">
@@ -236,7 +236,76 @@
                     </connections>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="846" y="500"/>
+            <point key="canvasLocation" x="851" y="500"/>
+        </scene>
+        <!--Add Geotification View Controller-->
+        <scene sceneID="SxV-gA-bu0">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2 " id="CfB-LZ-rg0" customClass="AddGeotificationViewController" customModule="honeybees" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dHB-CW-CgT"/>
+                        <viewControllerLayoutGuide type="bottom" id="IYh-g1-NC4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oPa-iJ-4Nc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QP7-4o-yJC">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Honeybee" id="wW2-vA-9PX">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SCs-bd-Mz7"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yYf-A0-aUc">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="f2W-JR-C7r" detailTextLabel="wam-fH-owl" style="IBUITableViewCellStyleValue1" id="syR-jk-LeT">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="syR-jk-LeT" id="7el-tP-Uhv">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f2W-JR-C7r">
+                                                    <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wam-fH-owl">
+                                                    <rect key="frame" x="543" y="12" width="42" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="CfB-LZ-rg0" id="CIr-mC-UDo"/>
+                                    <outlet property="delegate" destination="CfB-LZ-rg0" id="LQC-2e-HyT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Add" systemItem="add" id="Jgz-mZ-na6"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="todoListTable" destination="yYf-A0-aUc" id="aH6-Vo-DYA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kRb-gs-wdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1582" y="432"/>
         </scene>
     </scenes>
     <resources>

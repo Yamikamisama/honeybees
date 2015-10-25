@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UIAlertController"
-- !private "UIAlertAction"
-- !private "StringLiteralType"
+- !private "BooleanLiteralType"
 - "zoomToUserLocationInMapView"
-- "showSimpleAlertWithTitle"
+- !private "UIAlertController"
 - "String"
 - "UIViewController"
-- !private "BooleanLiteralType"
-- !private "MKCoordinateRegionMakeWithDistance"
+- !private "StringLiteralType"
 - "MKMapView"
+- !private "UIAlertAction"
+- "showSimpleAlertWithTitle"
+- !private "MKCoordinateRegionMakeWithDistance"
 depends-member:
 - !private ["PSs9AnyObject", "addAction"]
 - !private ["PSs9AnyObject", "coordinate"]

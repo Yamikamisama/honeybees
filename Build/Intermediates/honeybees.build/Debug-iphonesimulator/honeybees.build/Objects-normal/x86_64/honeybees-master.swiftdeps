@@ -1,6 +1,10 @@
 version: "Apple Swift version 2.0 (swiftlang_PONDEROSA-700.1.100.2 clang-700.1.74)"
 options: "f88b422e94d19f5ae757639645887c59"
-build_time: [499024834, 538720000]
+build_time: [499084291, 547146000]
 inputs: 
-	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/AppDelegate.swift": [499024723, 0]
-	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/ViewController.swift": [499010186, 0]
+	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/Utilities.swift": [499075663, 0]
+	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/GeotificationsViewController.swift": [499076614, 0]
+	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/Geotification.swift": [499075663, 0]
+	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/AppDelegate.swift": [499076600, 0]
+	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/AddGeotificationViewController.swift": [499084287, 0]
+	"/Users/stephreaves/Desktop/honeybees/honeybees/honeybees/ViewController2.swift": [499083771, 0]

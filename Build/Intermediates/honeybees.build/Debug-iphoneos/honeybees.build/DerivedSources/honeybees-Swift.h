@@ -97,6 +97,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIBarButtonItem;
+@class UITableView;
 @class UITextField;
 @class UISegmentedControl;
 @class MKMapView;
@@ -111,6 +112,7 @@ SWIFT_CLASS("_TtC9honeybees30AddGeotificationViewController")
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified radiusTextField;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified noteTextField;
 @property (nonatomic, weak) IBOutlet MKMapView * __null_unspecified mapView;
+@property (nonatomic) IBOutlet UITableView * __null_unspecified todoListTable;
 - (void)viewDidLoad;
 - (IBAction)textFieldEditingChanged:(UITextField * __nonnull)sender;
 - (IBAction)onCancel:(id __nonnull)sender;
@@ -204,6 +206,19 @@ SWIFT_CLASS("_TtC9honeybees28GeotificationsViewController")
 - (void)stopMonitoringGeotification:(Geotification * __nonnull)geotification;
 - (void)locationManager:(CLLocationManager * __nonnull)manager monitoringDidFailForRegion:(CLRegion * __nullable)region withError:(NSError * __nonnull)error;
 - (void)locationManager:(CLLocationManager * __nonnull)manager didFailWithError:(NSError * __nonnull)error;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+
+SWIFT_CLASS("_TtC9honeybees15ViewController2")
+@interface ViewController2 : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified todoInput;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified destinationIn;
+- (IBAction)submitPressed:(UIButton * __nonnull)sender;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
