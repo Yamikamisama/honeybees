@@ -1,8 +1,8 @@
 {
   "uuid": "133215f0-cf20-4c05-997b-3c9be5a64e5b",
-  "shortName": "Pebble.js",
-  "longName": "Pebble.js",
-  "companyName": "Meiguro",
+  "shortName": "Honey Bee",
+  "longName": "Honey Bee",
+  "companyName": "Honey Bees",
   "versionCode": 1,
   "versionLabel": "0.4",
   "capabilities": [
@@ -37,8 +37,13 @@
       },
       {
         "type": "png",
+        "name": "LOGO",
+        "file": "images/pebble_splash.png"
+      },
+      {
+        "type": "png",
         "name": "IMAGE_LOGO_SPLASH",
-        "file": "images/logo_splash.png"
+        "file": "images/pebble_splash.png"
       },
       {
         "type": "png",
@@ -50,11 +55,15 @@
         "name": "IMAGE_X",
         "file": "images/x.png"
       },
-
+      {
+        "type": "png",
+        "name": "IMAGE_ZZZ",
+        "file": "images/action_bar_icon_snooze_bw.png"
+      },
       {
         "type": "png",
         "name": "IMAGE_TILE_SPLASH",
-        "file": "images/logo_splash.png"
+        "file": "images/pebble_splash.png"
       },
       {
         "type": "font",
@@ -65,8 +74,7 @@
   },
   "targetPlatforms": [
     "aplite",
-    "basalt",
-    "chalk"
+    "basalt"
   ],
   "sdkVersion": "3"
 }
