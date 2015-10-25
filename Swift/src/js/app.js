@@ -6,20 +6,27 @@
 
 var UI          = require('ui'),
 Vector2         = require('vector2'),
+Settings        = require('settings'),
+// placeHolderList = JSON.parse(Settings.option('taskList')) || require('placeHolderList'),
 placeHolderList = require('placeHolderList'),
-main = new UI.Card({
+incompleteTasks = function (list) {
+  return list.filter(function (value) {
+    return !value.hasOwnProperty('completed');
+  });
+},
+homeCard        = new UI.Card({
   title: 'Honeybees',
   icon: 'images/logo28.png',
   subtitle: 'Hello World!',
   body: 'Press any button.'
 }),
-cardNoTasks = new UI.Card({
+noTasksCard     = new UI.Card({
   title: 'Honeybees',
   icon: 'images/logo28.png',
   subtitle: 'Hello World!',
   body: 'You\'re good, for now.'
 }),
-newMenu = new UI.Menu({
+decisionMenu    = new UI.Menu({
   sections: [{
     title: 'Finished Task?',
     items: [{
@@ -32,25 +39,35 @@ newMenu = new UI.Menu({
       subtitle: 'Superdry'
     }]
   }]
+}),
+snoozeMenu      = new UI.Menu({
+  sections: [{
+    title: 'Snooze Duration',
+    items: [{
+      title: '1 hour'
+    }, {
+      title: '1 day'
+    }]
+  }]
 });
 
-main.show();
+homeCard.show();
 
-main.on('click', 'select', function (e) {
-  var menu;
-  if (!menu && placeHolderList.length) {
-    menu = new UI.Menu({
+homeCard.on('click', 'select', function (e) {
+  var taskListMenu;
+  if (!taskListMenu && placeHolderList.length) {
+    taskListMenu = new UI.Menu({
       sections: [{
         title: 'Get yo ship together',
-        items: refreshTaskList(placeHolderList)
+        items: placeHolderList
       }]
     });
   } else {
-    cardNoTasks.show();
+    noTasksCard.show();
   }
 
-  menu.on('select', function (e) {
-    // console.log(JSON.stringify(e.item));
+  taskListMenu.show();
+  taskListMenu.on('select', function (e) {
     var card;
     if (!card) {
       card = new UI.Card({
@@ -91,7 +108,7 @@ main.on('click', 'select', function (e) {
 
 
 
-main.on('click', 'up', function (e) {
+homeCard.on('click', 'up', function (e) {
   var wind = new UI.Window({
     fullscreen: true
   });
@@ -106,7 +123,7 @@ main.on('click', 'up', function (e) {
   wind.show();
 });
 
-main.on('click', 'down', function (e) {
+homeCard.on('click', 'down', function (e) {
   var cardLogo = new UI.Card({
     // title: 'Honeybees',
     icon: 'IMAGE_ICON_LARGE',
