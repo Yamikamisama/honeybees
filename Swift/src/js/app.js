@@ -37,18 +37,12 @@ newMenu = new UI.Menu({
 main.show();
 
 main.on('click', 'select', function (e) {
-  var menu = new UI.Menu({
-    sections: [{
-      items: [{
-        title: 'Learn Pebble js',
-        icon: 'images/logo28.png',
-        subtitle: 'I love you Rob!'
-      }, {
-        title: 'Buy a new Jacket',
-        subtitle: 'Superdry'
-      }, {
-        title: 'Get A Turkey',
-        subtitle: 'Boston Market'
+  var menu;
+  if (!menu && placeHolderList.length) {
+    menu = new UI.Menu({
+      sections: [{
+        title: 'Get yo ship together',
+        items: refreshTaskList(placeHolderList)
       }]
     }]
   });
