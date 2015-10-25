@@ -5,5 +5,7 @@ use_frameworks!
 
 target 'honeybees' do
     pod 'PebbleKit'
+    pod 'CoreLocation'
+    pod 'MapKit'
 end
 

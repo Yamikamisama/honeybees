@@ -7,25 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6933E3FD1BDC820E00801659 /* TestLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6933E3FA1BDC820E00801659 /* TestLocations.gpx */; };
+		6933E3FE1BDC820E00801659 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6933E3FB1BDC820E00801659 /* Info.plist */; };
+		6933E4011BDC822400801659 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6933E3FF1BDC822400801659 /* LaunchScreen.xib */; };
+		6933E4041BDC824500801659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6933E4031BDC824500801659 /* Main.storyboard */; };
+		6983E1F21BDC7DD500615458 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6983E1F11BDC7DD500615458 /* Utilities.swift */; };
+		6983E1F41BDC7E0600615458 /* GeotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6983E1F31BDC7E0600615458 /* GeotificationsViewController.swift */; };
+		6983E1F61BDC7E0F00615458 /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6983E1F51BDC7E0F00615458 /* Geotification.swift */; };
+		6983E1FA1BDC7EBA00615458 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6983E1F91BDC7EBA00615458 /* Images.xcassets */; };
+		6983E1FC1BDC7FA900615458 /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6983E1FB1BDC7FA900615458 /* AddGeotificationViewController.swift */; };
+		6983E1FE1BDC7FC500615458 /* TestLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6983E1FD1BDC7FC500615458 /* TestLocations.gpx */; };
+		6983E2001BDC817100615458 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6983E1FF1BDC817100615458 /* CoreLocation.framework */; };
+		6983E2041BDC81B500615458 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6983E2031BDC81B500615458 /* MapKit.framework */; };
 		69EE57E41BDBC58900E06E77 /* honeybees-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EE57E31BDBC58900E06E77 /* honeybees-Bridging.m */; };
 		69FA2B421BDB368A00BEC967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA2B411BDB368A00BEC967 /* AppDelegate.swift */; };
-		69FA2B441BDB368A00BEC967 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA2B431BDB368A00BEC967 /* ViewController.swift */; };
-		69FA2B471BDB368A00BEC967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FA2B451BDB368A00BEC967 /* Main.storyboard */; };
 		69FA2B4A1BDB368A00BEC967 /* honeybees.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69FA2B481BDB368A00BEC967 /* honeybees.xcdatamodeld */; };
-		69FA2B4C1BDB368A00BEC967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FA2B4B1BDB368A00BEC967 /* Assets.xcassets */; };
 		69FA2B4F1BDB368A00BEC967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FA2B4D1BDB368A00BEC967 /* LaunchScreen.storyboard */; };
 		A7DB12F7B0C4B124F1DBD924 /* Pods_honeybees.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90C8ED01166BECEE88BB481 /* Pods_honeybees.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6933E3FA1BDC820E00801659 /* TestLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestLocations.gpx; sourceTree = "<group>"; };
+		6933E3FB1BDC820E00801659 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6933E4001BDC822400801659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../../../../Downloads/Geotify-Final 2/Geotify/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
+		6933E4021BDC824500801659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6983E1F11BDC7DD500615458 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6983E1F31BDC7E0600615458 /* GeotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeotificationsViewController.swift; sourceTree = "<group>"; };
+		6983E1F51BDC7E0F00615458 /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
+		6983E1F91BDC7EBA00615458 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6983E1FB1BDC7FA900615458 /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
+		6983E1FD1BDC7FC500615458 /* TestLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestLocations.gpx; sourceTree = "<group>"; };
+		6983E1FF1BDC817100615458 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreLocation.framework; sourceTree = "<group>"; };
+		6983E2031BDC81B500615458 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapKit.framework; sourceTree = "<group>"; };
 		69EE57E21BDBC58800E06E77 /* honeybees-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "honeybees-Bridging-Header.h"; sourceTree = "<group>"; };
 		69EE57E31BDBC58900E06E77 /* honeybees-Bridging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "honeybees-Bridging.m"; sourceTree = "<group>"; };
 		69FA2B3E1BDB368A00BEC967 /* honeybees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = honeybees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FA2B411BDB368A00BEC967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69FA2B431BDB368A00BEC967 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		69FA2B461BDB368A00BEC967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69FA2B491BDB368A00BEC967 /* honeybees.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = honeybees.xcdatamodel; sourceTree = "<group>"; };
-		69FA2B4B1BDB368A00BEC967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69FA2B4E1BDB368A00BEC967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69FA2B501BDB368A00BEC967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B90C8ED01166BECEE88BB481 /* Pods_honeybees.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_honeybees.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6983E2001BDC817100615458 /* CoreLocation.framework in Frameworks */,
+				6983E2041BDC81B500615458 /* MapKit.framework in Frameworks */,
 				A7DB12F7B0C4B124F1DBD924 /* Pods_honeybees.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,9 +68,21 @@
 		1A5A4AF1AE99778971A9B566 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6983E2031BDC81B500615458 /* MapKit.framework */,
+				6983E1FF1BDC817100615458 /* CoreLocation.framework */,
 				B90C8ED01166BECEE88BB481 /* Pods_honeybees.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6933E3FC1BDC820E00801659 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6933E3FA1BDC820E00801659 /* TestLocations.gpx */,
+				6933E3FB1BDC820E00801659 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = "../../../../Downloads/Geotify-Final 2/Geotify";
 			sourceTree = "<group>";
 		};
 		69FA2B351BDB368A00BEC967 = {
@@ -76,11 +108,17 @@
 		69FA2B401BDB368A00BEC967 /* honeybees */ = {
 			isa = PBXGroup;
 			children = (
+				6983E1FB1BDC7FA900615458 /* AddGeotificationViewController.swift */,
 				69FA2B411BDB368A00BEC967 /* AppDelegate.swift */,
-				69FA2B431BDB368A00BEC967 /* ViewController.swift */,
-				69FA2B451BDB368A00BEC967 /* Main.storyboard */,
-				69FA2B4B1BDB368A00BEC967 /* Assets.xcassets */,
+				6983E1F51BDC7E0F00615458 /* Geotification.swift */,
+				6983E1F91BDC7EBA00615458 /* Images.xcassets */,
+				6933E4031BDC824500801659 /* Main.storyboard */,
+				6933E3FF1BDC822400801659 /* LaunchScreen.xib */,
+				6983E1F31BDC7E0600615458 /* GeotificationsViewController.swift */,
 				69FA2B4D1BDB368A00BEC967 /* LaunchScreen.storyboard */,
+				6933E3FC1BDC820E00801659 /* Supporting Files */,
+				6983E1FD1BDC7FC500615458 /* TestLocations.gpx */,
+				6983E1F11BDC7DD500615458 /* Utilities.swift */,
 				69FA2B501BDB368A00BEC967 /* Info.plist */,
 				69FA2B481BDB368A00BEC967 /* honeybees.xcdatamodeld */,
 			);
@@ -158,9 +196,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6983E1FA1BDC7EBA00615458 /* Images.xcassets in Resources */,
 				69FA2B4F1BDB368A00BEC967 /* LaunchScreen.storyboard in Resources */,
-				69FA2B4C1BDB368A00BEC967 /* Assets.xcassets in Resources */,
-				69FA2B471BDB368A00BEC967 /* Main.storyboard in Resources */,
+				6983E1FE1BDC7FC500615458 /* TestLocations.gpx in Resources */,
+				6933E4041BDC824500801659 /* Main.storyboard in Resources */,
+				6933E4011BDC822400801659 /* LaunchScreen.xib in Resources */,
+				6933E3FD1BDC820E00801659 /* TestLocations.gpx in Resources */,
+				6933E3FE1BDC820E00801659 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				69EE57E41BDBC58900E06E77 /* honeybees-Bridging.m in Sources */,
-				69FA2B441BDB368A00BEC967 /* ViewController.swift in Sources */,
+				6983E1F41BDC7E0600615458 /* GeotificationsViewController.swift in Sources */,
+				6983E1F61BDC7E0F00615458 /* Geotification.swift in Sources */,
+				6983E1FC1BDC7FA900615458 /* AddGeotificationViewController.swift in Sources */,
 				69FA2B421BDB368A00BEC967 /* AppDelegate.swift in Sources */,
+				6983E1F21BDC7DD500615458 /* Utilities.swift in Sources */,
 				69FA2B4A1BDB368A00BEC967 /* honeybees.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,12 +274,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		69FA2B451BDB368A00BEC967 /* Main.storyboard */ = {
+		6933E3FF1BDC822400801659 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				69FA2B461BDB368A00BEC967 /* Base */,
+				6933E4001BDC822400801659 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6933E4031BDC824500801659 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6933E4021BDC824500801659 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "../../../../Downloads/Geotify-Final 2/Geotify";
 			sourceTree = "<group>";
 		};
 		69FA2B4D1BDB368A00BEC967 /* LaunchScreen.storyboard */ = {
@@ -337,6 +391,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = honeybees/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephreaves.honeybees;
@@ -352,6 +410,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = honeybees/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephreaves.honeybees;
