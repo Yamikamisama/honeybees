@@ -1,0 +1,130 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "C9honeybees14ViewController"
+provides-member:
+- ["C9honeybees14ViewController", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+depends-top-level:
+- "ViewController"
+- "UIViewController"
+depends-member:
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["C9honeybees14ViewController", "deinit"]
+- ["C9honeybees14ViewController", "didReceiveMemoryWarning"]
+- ["C9honeybees14ViewController", "init"]
+- ["C9honeybees14ViewController", "viewDidLoad"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- "C9honeybees14ViewController"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/honeybees-Bridging-Header.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/NSDictionary+Pebble.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/NSNumber+stdint.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBErrors.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBDataLoggingService.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/gtypes.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBBitmap.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBPebbleCentral+Legacy.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBPebbleCentral+DefaultCentral.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBPebbleCentral.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBResourceMetadata.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBFirmwareMetadata.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBFirmwareVersion.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBVersionInfo.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+Version.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+Sports.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+Ping.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+Legacy.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+Golf.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+AppMessages.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBDefines.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBLogConfig.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PebbleKit.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+interface-hash: "ad0c94bb01527052475fdca84f34ff62"

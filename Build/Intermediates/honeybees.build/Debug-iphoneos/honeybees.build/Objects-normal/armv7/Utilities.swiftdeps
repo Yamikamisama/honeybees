@@ -1,0 +1,228 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "showSimpleAlertWithTitle"
+- "zoomToUserLocationInMapView"
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+- !private "StringLiteralType"
+- !private "MKCoordinateRegionMakeWithDistance"
+- !private "UIAlertController"
+- "String"
+- "MKMapView"
+- !private "BooleanLiteralType"
+- "zoomToUserLocationInMapView"
+- !private "UIAlertAction"
+- "showSimpleAlertWithTitle"
+- "UIViewController"
+depends-member:
+- !private ["PSs9AnyObject", "addAction"]
+- !private ["PSs9AnyObject", "coordinate"]
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "location"]
+- !private ["PSs9AnyObject", "presentViewController"]
+- !private ["PSs9AnyObject", "setRegion"]
+- !private ["PSs9AnyObject", "userLocation"]
+- !private ["CSo10CLLocation", "coordinate"]
+- !private ["PSs11CVarArgType", "addAction"]
+- !private ["PSs11CVarArgType", "coordinate"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "location"]
+- !private ["PSs11CVarArgType", "presentViewController"]
+- !private ["PSs11CVarArgType", "setRegion"]
+- !private ["PSs11CVarArgType", "userLocation"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs23CustomStringConvertible", "addAction"]
+- !private ["PSs23CustomStringConvertible", "coordinate"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "location"]
+- !private ["PSs23CustomStringConvertible", "presentViewController"]
+- !private ["PSs23CustomStringConvertible", "setRegion"]
+- !private ["PSs23CustomStringConvertible", "userLocation"]
+- !private ["PSs9Equatable", "Alert"]
+- !private ["PSs9Equatable", "Cancel"]
+- !private ["PSs9Equatable", "addAction"]
+- !private ["PSs9Equatable", "coordinate"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "location"]
+- !private ["PSs9Equatable", "presentViewController"]
+- !private ["PSs9Equatable", "setRegion"]
+- !private ["PSs9Equatable", "userLocation"]
+- !private ["PSs8Hashable", "Alert"]
+- !private ["PSs8Hashable", "Cancel"]
+- !private ["PSs8Hashable", "addAction"]
+- !private ["PSs8Hashable", "coordinate"]
+- !private ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "location"]
+- !private ["PSs8Hashable", "presentViewController"]
+- !private ["PSs8Hashable", "setRegion"]
+- !private ["PSs8Hashable", "userLocation"]
+- !private ["PSo12MKAnnotation", "location"]
+- !private ["CSo9MKMapView", "setRegion"]
+- !private ["CSo9MKMapView", "userLocation"]
+- !private ["CSo14MKUserLocation", "location"]
+- !private ["PSo8NSCoding", "addAction"]
+- !private ["PSo8NSCoding", "coordinate"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "setRegion"]
+- !private ["PSo8NSCoding", "userLocation"]
+- !private ["PSo9NSCopying", "coordinate"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- !private ["CSo8NSObject", "addAction"]
+- !private ["CSo8NSObject", "coordinate"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "location"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "setRegion"]
+- !private ["CSo8NSObject", "userLocation"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "coordinate"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "location"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "setRegion"]
+- !private ["PSo16NSObjectProtocol", "userLocation"]
+- !private ["PSo14NSSecureCoding", "coordinate"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16RawRepresentable", "Alert"]
+- !private ["PSs16RawRepresentable", "Cancel"]
+- !private ["PSo29UIAccessibilityIdentification", "setRegion"]
+- !private ["PSo29UIAccessibilityIdentification", "userLocation"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Cancel"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "Alert"]
+- !private ["PSo12UIAppearance", "setRegion"]
+- !private ["PSo12UIAppearance", "userLocation"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "setRegion"]
+- !private ["PSo21UIAppearanceContainer", "userLocation"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo17UICoordinateSpace", "setRegion"]
+- !private ["PSo17UICoordinateSpace", "userLocation"]
+- !private ["PSo13UIDynamicItem", "setRegion"]
+- !private ["PSo13UIDynamicItem", "userLocation"]
+- !private ["CSo11UIResponder", "addAction"]
+- !private ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "setRegion"]
+- !private ["CSo11UIResponder", "userLocation"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "setRegion"]
+- !private ["PSo18UITraitEnvironment", "userLocation"]
+- !private ["CSo6UIView", "setRegion"]
+- !private ["CSo6UIView", "userLocation"]
+- !private ["CSo16UIViewController", "addAction"]
+- !private ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "setRegion"]
+- !private ["PSs12_Reflectable", "userLocation"]
+depends-nominal:
+- !private "PSs9AnyObject"
+- !private "CSo10CLLocation"
+- !private "PSs11CVarArgType"
+- "PSs28CustomDebugStringConvertible"
+- !private "PSs23CustomStringConvertible"
+- !private "PSs9Equatable"
+- !private "PSs8Hashable"
+- !private "PSo12MKAnnotation"
+- !private "CSo9MKMapView"
+- !private "CSo14MKUserLocation"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo26NSExtensionRequestHandling"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSs16RawRepresentable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "CSo11UIResponder"
+- !private "PSo16UIStateRestoring"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "CSo16UIViewController"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/honeybees-Bridging-Header.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/NSDictionary+Pebble.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/NSNumber+stdint.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBErrors.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBDataLoggingService.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/gtypes.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBBitmap.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBPebbleCentral+Legacy.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBPebbleCentral+DefaultCentral.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBPebbleCentral.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBResourceMetadata.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBFirmwareMetadata.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBFirmwareVersion.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBVersionInfo.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+Version.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+Sports.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+Ping.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+Legacy.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+Golf.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch+AppMessages.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBWatch.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBDefines.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PBLogConfig.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Headers/PebbleKit.h"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/Pods/PebbleKit/PebbleKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "./CoreLocation.framework/Headers/CLGeocoder.h"
+- "./CoreLocation.framework/Headers/CLPlacemark.h"
+- "./CoreLocation.framework/Headers/CLLocationManager+CLVisitExtensions.h"
+- "./CoreLocation.framework/Headers/CLVisit.h"
+- "./CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
+- "./CoreLocation.framework/Headers/CLLocationManager.h"
+- "./CoreLocation.framework/Headers/CLHeading.h"
+- "./CoreLocation.framework/Headers/CLBeaconRegion.h"
+- "./CoreLocation.framework/Headers/CLCircularRegion.h"
+- "./CoreLocation.framework/Headers/CLLocation.h"
+- "./CoreLocation.framework/Headers/CLRegion.h"
+- "./CoreLocation.framework/Headers/CLError.h"
+- "./CoreLocation.framework/Headers/CLErrorDomain.h"
+- "./CoreLocation.framework/Headers/CLAvailability.h"
+- "./CoreLocation.framework/Headers/CoreLocation.h"
+- "./CoreLocation.framework/Modules/module.modulemap"
+- "/Users/stephreaves/Desktop/honeybees/honeybees/CoreLocation.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+interface-hash: "a4b64b553a9ce8fa254cc6da4e47c1d4"
