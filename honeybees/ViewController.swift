@@ -17,6 +17,7 @@ var destination = [String]()
 
 class ViewController: UIViewController, UITableViewDelegate {
 
+    @IBOutlet weak var todoListTable: UITableView!
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todoItem.count
@@ -31,6 +32,22 @@ class ViewController: UIViewController, UITableViewDelegate {
         
         return cell
     }
+    
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+        
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            
+            todoItem.removeAtIndex(indexPath.row)
+            
+            NSUserDefaults.standardUserDefaults().setObject(todoItem, forKey: "todoItem")
+            
+            todoListTable.reloadData()
+            
+        }
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

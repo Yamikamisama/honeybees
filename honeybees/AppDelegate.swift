@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pebble.delegate = self
         
         pebble.appUUID = NSUUID(UUIDString: "7bb88216-4ff7-4a35-bc51-13092ee7b427")
-
+        sleep(5)
         watch = pebble.lastConnectedWatch()
         return true
     }

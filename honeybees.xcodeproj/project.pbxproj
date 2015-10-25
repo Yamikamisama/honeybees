@@ -16,6 +16,9 @@
 		69FA2B4C1BDB368A00BEC967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FA2B4B1BDB368A00BEC967 /* Assets.xcassets */; };
 		69FA2B4F1BDB368A00BEC967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FA2B4D1BDB368A00BEC967 /* LaunchScreen.storyboard */; };
 		F46928221BDC654B00346E84 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46928211BDC654B00346E84 /* ViewController2.swift */; };
+		F47EC0F91BDC860600ABAD28 /* Bitter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F47EC0F61BDC860600ABAD28 /* Bitter-Bold.ttf */; };
+		F47EC0FA1BDC860600ABAD28 /* Bitter-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F47EC0F71BDC860600ABAD28 /* Bitter-Italic.ttf */; };
+		F47EC0FB1BDC860600ABAD28 /* Bitter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F47EC0F81BDC860600ABAD28 /* Bitter-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		B9F22823B52AF31842938D0B /* Pods_honeybees.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_honeybees.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F428675159EE75F4CE126C /* Pods-honeybees.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-honeybees.debug.xcconfig"; path = "Pods/Target Support Files/Pods-honeybees/Pods-honeybees.debug.xcconfig"; sourceTree = "<group>"; };
 		F46928211BDC654B00346E84 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		F47EC0F61BDC860600ABAD28 /* Bitter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Bold.ttf"; sourceTree = "<group>"; };
+		F47EC0F71BDC860600ABAD28 /* Bitter-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Italic.ttf"; sourceTree = "<group>"; };
+		F47EC0F81BDC860600ABAD28 /* Bitter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				69EE57E31BDBC58900E06E77 /* honeybees-Bridging.m */,
+				F47EC0F51BDC85A400ABAD28 /* resources */,
 				69FA2B401BDB368A00BEC967 /* honeybees */,
 				69FA2B3F1BDB368A00BEC967 /* Products */,
 				69EE57E21BDBC58800E06E77 /* honeybees-Bridging-Header.h */,
@@ -89,6 +96,16 @@
 				69FA2B481BDB368A00BEC967 /* honeybees.xcdatamodeld */,
 			);
 			path = honeybees;
+			sourceTree = "<group>";
+		};
+		F47EC0F51BDC85A400ABAD28 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F47EC0F61BDC860600ABAD28 /* Bitter-Bold.ttf */,
+				F47EC0F71BDC860600ABAD28 /* Bitter-Italic.ttf */,
+				F47EC0F81BDC860600ABAD28 /* Bitter-Regular.ttf */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 		FC83057F964E2367B7800DBE /* Frameworks */ = {
@@ -134,7 +151,7 @@
 				TargetAttributes = {
 					69FA2B3D1BDB368A00BEC967 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 2RY2CAPLZS;
+						DevelopmentTeam = 7MLVVQY2BC;
 					};
 				};
 			};
@@ -164,6 +181,9 @@
 				69FA2B4F1BDB368A00BEC967 /* LaunchScreen.storyboard in Resources */,
 				69FA2B4C1BDB368A00BEC967 /* Assets.xcassets in Resources */,
 				69FA2B471BDB368A00BEC967 /* Main.storyboard in Resources */,
+				F47EC0FB1BDC860600ABAD28 /* Bitter-Regular.ttf in Resources */,
+				F47EC0F91BDC860600ABAD28 /* Bitter-Bold.ttf in Resources */,
+				F47EC0FA1BDC860600ABAD28 /* Bitter-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,11 +361,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = honeybees/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stephreaves.honeybees;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.honeybees;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "honeybees-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,11 +381,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = honeybees/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stephreaves.honeybees;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.honeybees;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "honeybees-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
