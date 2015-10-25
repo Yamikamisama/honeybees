@@ -44,36 +44,52 @@ main.on('click', 'select', function (e) {
         title: 'Get yo ship together',
         items: refreshTaskList(placeHolderList)
       }]
-    }]
-  });
-  menu.on('select', function (e) {
-    var card = new UI.Card({
-      title: e.item.title,
-      subtitle: e.item.subtitle,
-      body: 'I want to buy a something and that thing may or may not be this thing',
-      scrollable: true
     });
-    card.on('click', 'select', function () {
-      var newMenu = new UI.Menu({
-        sections: [{
-          title: 'Finished Task?',
-          items: [{
-            title: 'Completed',
-            icon: 'IMAGE_CHECK',
-            subtitle: 'I love you Rob!'
-          }, {
-            title: 'Later',
-            icon: 'IMAGE_X',
-            subtitle: 'Superdry'
-          }]
-        }]
+  } else {
+    cardNoTasks.show();
+  }
+
+  menu.on('select', function (e) {
+    // console.log(JSON.stringify(e.item));
+    var card;
+    if (!card) {
+      card = new UI.Card({
+        taskId: e.item.taskId,
+        title: e.item.title,
+        subtitle: e.item.subtitle,
+        body: e.item.body,
+        scrollable: true
       });
+    }
+    card.on('click', 'select', function (e) {
+      console.log(JSON.stringify(e));
       newMenu.show();
+      newMenu.on('select', function (e) {
+        // console.log(JSON.stringify(card));
+        placeHolderList = removeTask(card.state.taskId, placeHolderList);
+        newMenu.hide();
+        card.hide();
+        console.log(JSON.stringify(card));
+        menu.items(0, placeHolderList); // Finds section of index 0 and replaces its items array.
+
+        if (!placeHolderList.length) {
+          menu.hide();
+          cardNoTasks.show();
+        }
+        // console.log(JSON.stringify(menu.items(0)));
+        // console.log(JSON.stringify(placeHolderList));
+      });
     });
     card.show();
   });
   menu.show();
 });
+
+
+
+
+
+
 
 main.on('click', 'up', function (e) {
   var wind = new UI.Window({
@@ -99,3 +115,28 @@ main.on('click', 'down', function (e) {
   });
   cardLogo.show();
 });
+
+
+
+
+
+
+
+
+
+function refreshTaskList (taskList) {
+  var items = [];
+  for (var i = 0; i < taskList.length; i++) {
+    items.push(taskList[i]);
+  }
+  return items;
+}
+
+function removeTask (id, taskList) {
+  for (var i = 0; i < taskList.length; i++) {
+    if (taskList[i].taskId === id) {
+      taskList.splice(i, 1); // Remove the element from array task list.
+    }
+  }
+  return taskList;
+}
