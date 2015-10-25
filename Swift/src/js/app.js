@@ -4,11 +4,10 @@
  * This is where you write your app.
  */
 
-var UI = require('ui');
-var Vector2 = require('vector2');
-var placeHolderList = require('placeHolderList');
-
-var main = new UI.Card({
+var UI          = require('ui'),
+Vector2         = require('vector2'),
+placeHolderList = require('placeHolderList'),
+main = new UI.Card({
   title: 'Honeybees',
   icon: 'images/logo28.png',
   subtitle: 'Hello World!',
