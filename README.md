@@ -34,6 +34,7 @@ An iOS and Pebble app to help keep the busy New Yorker on track.
 * GitHub: https://github.com/ysanti
 * LinkedIn: https://www.linkedin.com/in/yvonnealexandra
 * Email: santiagocharriez@gmail.com
+* Behance: behance.net/yvonnealexandra
 
 ####Robert Yang
 * GitHub: https://github.com/unknownbreaker
