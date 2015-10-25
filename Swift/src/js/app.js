@@ -8,10 +8,10 @@ var UI          = require('ui'),
 Vector2         = require('vector2'),
 Settings        = require('settings'),
 // placeHolderList = JSON.parse(Settings.option('taskList')) || require('placeHolderList'),
-placeHolderList = require('placeHolderList'),
-incompleteTasks = function (list) {
-  return list.filter(function (value) {
-    return !value.hasOwnProperty('completed');
+taskListArray = require('placeHolderList'),
+incompleteTasks = function () {
+  return taskListArray.filter(function (value) {
+    return !value.extras || !value.extras.hasOwnProperty('completed');
   });
 },
 homeCard        = new UI.Card({
