@@ -19,24 +19,23 @@ An iOS and Pebble app to help keep the busy New Yorker on track.
 - Used Balsamic for wireframing.
 - Used Photoshop, Illustrator, HyperDither to design and export designs for use in both the iOS and Pebble apps.
  
-##Team Members
-####Michael Angelo
+## Team Members
+#### Michael Angelo
 * GitHub: https://github.com/Yamikamisama
 * LinkedIn: http://www.linkedin.com/pub/michael-angelo/9a/a93/1b0/
 * Email: yamikamisama@gmail.com
 
-####Steph Reaves
+#### Steph Reaves
 * GitHub:https://github.com/StephReaves
 * LinkedIn: https://www.linkedin.com/in/stephreaves
 * Email: stephanie.reaves@gmail.com 
 
-####Yvonne Santiago
+#### Yvonne Santiago
 * GitHub: https://github.com/ysanti
 * LinkedIn: https://www.linkedin.com/in/yvonnealexandra
 * Email: santiagocharriez@gmail.com
 * Behance: behance.net/yvonnealexandra
 
-####Robert Yang
+#### Robert Yang
 * GitHub: https://github.com/unknownbreaker
 * LinkedIn: https://www.linkedin.com/in/robwyang
-* Email: rob.yang@gmail.com
